@@ -3,23 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You LeelaQ — 19,023 Experiences Shared</title>
+<title>ThankYouLeelaQ — 19,023 Real Experiences</title>
+<meta name="description" content="19,023 real experiences shared by real people using Leela Quantum Tech products. Search by condition, product, or browse.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fafaf8;color:#333;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px}
-.container{max-width:600px}
-.counter{font-size:clamp(48px,10vw,72px);font-weight:800;color:#2a5a3a;line-height:1.1;margin-bottom:8px}
-h1{font-size:clamp(20px,4vw,28px);font-weight:300;color:#666;margin-bottom:40px;line-height:1.5}
-.tagline{font-size:16px;color:#999;margin-bottom:32px}
-.coming{display:inline-block;background:#2a5a3a;color:#fff;padding:12px 32px;border-radius:100px;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
+:root{--bg:#f5f0eb;--card:#fffdf9;--text:#1c1917;--muted:#78716c;--accent:#b45309;--accent2:#92400e;--rose:#9f1239;--rose-light:#fff1f2;--blue:#1e40af;--blue-light:#dbeafe;--warm:#f59e0b;--border:#e8e2d9;--fh:'Archivo',sans-serif;--fb:'Crimson Pro',Georgia,serif;--fm:'IBM Plex Mono',monospace}
+body{font-family:var(--fb);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.disc{background:#292524;color:#d6d3d1;padding:10px 20px;text-align:center;font-family:var(--fh);font-size:11px;letter-spacing:.3px;line-height:1.5}
+nav{background:rgba(255,253,249,.92);border-bottom:1px solid var(--border);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;backdrop-filter:blur(12px);gap:8px}
+.nl{font-family:var(--fh);font-weight:900;font-size:17px;color:var(--accent);white-space:nowrap}.nl span{color:var(--text)}
+.nf{display:none;padding:7px 12px;border:2px solid var(--border);border-radius:8px;font-family:var(--fh);font-size:12px;font-weight:700;background:var(--card);cursor:pointer}
+.ns{flex:1;max-width:460px;position:relative}
+.ns input{width:100%;padding:9px 14px 9px 36px;border:2px solid var(--border);border-radius:8px;font-family:var(--fh);font-size:13px;background:var(--bg);transition:.2s}
+.ns input:focus{outline:none;border-color:var(--accent);background:var(--card)}
+.ns svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted);width:16px;height:16px}
+.nc{font-family:var(--fm);font-size:12px;color:var(--muted);white-space:nowrap}.nc strong{color:var(--accent);font-size:14px}
+.hero{padding:48px 20px 40px;text-align:center;position:relative}
+.hero::after{content:'';position:absolute;bottom:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+.he{font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:4px;color:var(--accent);margin-bottom:16px}
+.hc{font-family:var(--fh);font-size:clamp(52px,13vw,96px);font-weight:900;line-height:1;letter-spacing:-3px;margin-bottom:8px}
+.hero h1{font-family:var(--fh);font-size:clamp(22px,3.5vw,40px);font-weight:900;line-height:1.15;margin-bottom:12px;letter-spacing:-.8px}
+.hero h1 em{position:relative;font-style:normal}.hero h1 em::after{content:'';position:absolute;bottom:2px;left:-3px;right:-3px;height:8px;background:rgba(180,83,9,.12);z-index:-1;border-radius:2px}
+.hero p{font-size:17px;color:var(--muted);max-width:500px;margin:0 auto 24px;line-height:1.5}
+.hs{max-width:540px;margin:0 auto;position:relative}
+.hs input{width:100%;padding:16px 18px 16px 46px;border:2px solid var(--border);border-radius:12px;font-family:var(--fh);font-size:15px;background:var(--card);box-shadow:0 4px 20px rgba(0,0,0,.04);transition:.3s}
+.hs input:focus{outline:none;border-color:var(--accent);box-shadow:0 4px 28px rgba(180,83,9,.08)}
+.hs svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted);width:18px;height:18px}
+.hs .hint{font-family:var(--fm);font-size:10px;color:var(--muted);margin-top:6px}
+.qt{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;max-width:660px;margin:16px auto 0}
+.q{font-family:var(--fh);font-size:11px;font-weight:600;padding:4px 12px;border-radius:6px;cursor:pointer;border:1px solid var(--border);background:var(--card);transition:.15s;color:var(--text)}.q:hover{border-color:var(--accent);color:var(--accent)}.q.hot{background:var(--accent);color:#fff;border-color:var(--accent)}
+.sp{max-width:1100px;margin:0 auto;padding:28px 20px 20px}
+.sp-h{font-family:var(--fh);font-size:18px;font-weight:800;margin-bottom:12px}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.sc{border-radius:10px;padding:20px 16px;cursor:pointer;transition:.2s;color:#fff}.sc:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.12)}
+.sc h3{font-family:var(--fh);font-size:14px;font-weight:800;margin-bottom:2px}.sc p{font-size:12px;opacity:.8;font-family:var(--fh);margin-bottom:4px}.sc .sn{font-family:var(--fm);font-size:24px;font-weight:500}
+.s1{background:linear-gradient(135deg,#292524,#44403c)}.s2{background:linear-gradient(135deg,#065f46,#047857)}.s3{background:linear-gradient(135deg,#3f6212,#65a30d)}.s4{background:linear-gradient(135deg,#7c2d12,#c2410c)}
+.ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:300}.ov.open{display:block}
+.ml{max-width:1100px;margin:0 auto;padding:24px 20px 48px;display:grid;grid-template-columns:230px 1fr;gap:24px}
+.sb{position:sticky;top:68px;align-self:start;max-height:calc(100vh - 88px);overflow-y:auto;padding-right:4px}
+.sb::-webkit-scrollbar{width:3px}.sb::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.mc{display:none;font-family:var(--fh);font-size:13px;font-weight:700;padding:8px 0 14px;border-bottom:1px solid var(--border);margin-bottom:14px;cursor:pointer;border-top:none;border-left:none;border-right:none;background:none;color:var(--text);width:100%;text-align:left}
+.fs{margin-bottom:18px}.fs h3{font-family:var(--fh);font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:5px;font-weight:700}
+.ft{display:flex;align-items:center;justify-content:space-between;padding:6px 8px;border-radius:6px;cursor:pointer;transition:.15s;font-family:var(--fh);font-size:12px;margin-bottom:1px}.ft:hover{background:rgba(180,83,9,.08)}.ft.on{background:var(--accent);color:#fff}
+.ft .ct{font-family:var(--fm);font-size:10px;color:var(--muted);min-width:32px;text-align:right}.ft.on .ct{color:rgba(255,255,255,.7)}
+.fd{display:flex;flex-direction:column;gap:10px}
+.fh{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;padding-bottom:8px;border-bottom:2px solid var(--text)}
+.fh h2{font-family:var(--fh);font-size:18px;font-weight:800}.fh .rc{font-family:var(--fm);font-size:11px;color:var(--muted)}
+.tc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;transition:.25s;cursor:pointer}
+.tc:hover{box-shadow:0 4px 16px rgba(0,0,0,.04);border-color:var(--accent);transform:translateY(-1px)}
+.tc.sk{border-left:3px solid var(--rose)}
+.th{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.ta{width:36px;height:36px;border-radius:50%;background:rgba(180,83,9,.1);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:700;color:var(--accent);font-size:14px;flex-shrink:0}
+.tc.sk .ta{background:var(--rose-light);color:var(--rose)}
+.tn{font-family:var(--fh);font-weight:700;font-size:13px}.ts{font-family:var(--fm);font-size:10px;color:var(--muted)}
+.tt{font-size:15px;line-height:1.75;color:#44403c;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}.tt.open{display:block;-webkit-line-clamp:unset}
+.te{font-family:var(--fh);color:var(--accent);font-size:11px;font-weight:700;cursor:pointer;border:none;background:none;padding:0;margin-top:4px}
+.tu{font-family:var(--fm);font-size:9px;color:var(--muted);margin-top:6px;font-style:italic;display:none}.tt.open~.tu{display:block}
+.tg{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}
+.b{font-family:var(--fh);font-size:9px;font-weight:600;padding:2px 7px;border-radius:3px}.bc{background:#fef3c7;color:#92400e}.bp{background:var(--blue-light);color:var(--blue)}.bs{background:var(--rose-light);color:var(--rose)}.bw{background:#ecfccb;color:#3f6212}
+.sd{text-align:center;padding:24px 12px;margin:4px 0}.sd .dn{font-family:var(--fh);font-size:16px;font-weight:800}.sd .dm{font-family:var(--fm);font-size:11px;color:var(--muted);margin-top:2px}.sd .db{width:100px;height:3px;background:var(--border);border-radius:2px;margin:6px auto 0;overflow:hidden}.sd .df{height:100%;background:var(--accent);border-radius:2px}
+.loading{text-align:center;padding:32px;font-family:var(--fh);color:var(--muted);font-size:14px}
+.lm{text-align:center;padding:24px}.lm button{padding:12px 40px;border:2px solid var(--text);border-radius:8px;background:none;font-family:var(--fh);font-weight:700;font-size:13px;cursor:pointer;transition:.2s}.lm button:hover{background:var(--text);color:#fff}
+.hall{background:#292524;color:#fff;padding:52px 20px}.hall-i{max-width:1060px;margin:0 auto}.hall h2{font-family:var(--fh);font-size:26px;font-weight:900;margin-bottom:4px}.hall-s{color:#a8a29e;font-size:13px;margin-bottom:20px;font-family:var(--fh)}
+.hg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.hk{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:20px;transition:.2s}.hk:hover{background:rgba(255,255,255,.1)}
+.hk .hq{font-family:var(--fb);font-size:15px;line-height:1.6;font-style:italic;margin-bottom:10px;color:#e7e5e4}.hk .hn{font-family:var(--fh);font-weight:700;font-size:12px;color:var(--warm)}.hk .hd{font-family:var(--fm);font-size:9px;color:#78716c;margin-top:2px}
+.sub{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:56px 20px}
+.sub-i{max-width:940px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:start}
+.sub-l h2{font-family:var(--fh);font-size:clamp(22px,3vw,28px);font-weight:900;margin-bottom:10px}.sub-l p{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:10px}
+.sub-st{display:flex;flex-direction:column;gap:4px;margin-top:16px;font-family:var(--fm);font-size:11px;color:var(--muted)}
+.sub-f{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:24px}
+.fg{margin-bottom:14px}.fg label{display:block;font-family:var(--fh);font-size:12px;font-weight:600;margin-bottom:4px}
+.fg input,.fg select,.fg textarea{width:100%;padding:9px 12px;border:2px solid var(--border);border-radius:8px;font-family:var(--fb);font-size:14px;background:var(--card);transition:.2s}.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--accent)}
+.fg textarea{resize:vertical;line-height:1.6}.fg select{font-family:var(--fh);font-size:12px}
+.rr{display:flex;gap:14px;flex-wrap:wrap;margin-top:3px}.rl{font-family:var(--fh);font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;cursor:pointer}.rl input{accent-color:var(--accent)}
+.sb-btn{width:100%;padding:13px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-family:var(--fh);font-size:14px;font-weight:700;cursor:pointer;transition:.2s}.sb-btn:hover{background:var(--accent2)}
+.sb-n{font-family:var(--fm);font-size:10px;color:var(--muted);text-align:center;margin-top:8px}
+.cta-s{text-align:center;padding:56px 20px;background:linear-gradient(180deg,var(--bg),#ede8e1)}
+.cta-s h2{font-family:var(--fh);font-size:clamp(22px,3.5vw,32px);font-weight:900;margin-bottom:6px}.cta-s p{font-size:15px;color:var(--muted);max-width:440px;margin:0 auto 20px;font-family:var(--fh)}
+.cta-s button{padding:14px 36px;background:var(--accent);color:#fff;font-family:var(--fh);font-weight:700;font-size:14px;border-radius:8px;border:none;cursor:pointer;transition:.2s}.cta-s button:hover{background:var(--accent2)}
+footer{text-align:center;padding:28px 20px;border-top:1px solid var(--border)}footer p{font-family:var(--fh);font-size:10px;color:var(--muted);max-width:580px;margin:0 auto;line-height:1.5}
+@media(max-width:900px){.ml{grid-template-columns:1fr}.sb{display:none}.nf{display:block}.nc{display:none}
+.sb.mo{display:block;position:fixed;top:0;left:0;bottom:0;width:270px;z-index:301;background:var(--card);padding:16px;overflow-y:auto;max-height:100vh;box-shadow:4px 0 20px rgba(0,0,0,.15);animation:si .25s ease}
+@keyframes si{from{transform:translateX(-100%)}to{transform:translateX(0)}}.mc{display:block}
+.sg{grid-template-columns:1fr 1fr;gap:6px}.sc{padding:16px 14px}.sc h3{font-size:13px}.sc .sn{font-size:20px}.sub-i{grid-template-columns:1fr;gap:20px}}
+@media(max-width:560px){nav{padding:8px 10px}.nl{font-size:14px}.hero{padding:32px 14px 28px}.hc{font-size:48px}.hero h1{font-size:20px}.hero p{font-size:14px}
+.hs input{font-size:13px;padding:12px 14px 12px 40px}.qt{gap:3px}.q{font-size:10px;padding:3px 8px}.sp{padding:18px 12px}.sg{grid-template-columns:1fr}.tc{padding:14px}
+.sub{padding:36px 14px}.sub-f{padding:18px}.rr{flex-direction:column;gap:6px}}
 </style>
 </head>
 <body>
-<div class="container">
-<div class="counter">19,023</div>
-<h1>real experiences shared by real people<br>using Leela Quantum Tech products</h1>
-<p class="tagline">Every story unedited. Every name real. Every experience authentic.</p>
-<span class="coming">Full site launching soon</span>
-</div>
+<div class="disc">These are unedited experiences shared by real community members. Individual results vary. Leela Quantum Tech products are not intended to diagnose, treat, cure, or prevent any disease.</div>
+<nav><div class="nl">Thank<span>You</span>LeelaQ</div><button class="nf" onclick="openF()">☰ Filter</button>
+<div class="ns"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="navS" placeholder="Search stories..." oninput="doSearch(this.value)"></div>
+<div class="nc"><strong id="navC">19,023</strong> stories</div></nav>
+<div class="hero"><div class="he">From the community that changed everything</div><div class="hc" id="heroN">0</div>
+<h1>real people. real <em>experiences.</em></h1><p>Find the stories that matter to you.</p>
+<div class="hs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="heroS" placeholder="Try 'anxiety' or 'dog' or 'sleep'..." oninput="doSearch(this.value)"><div class="hint">Popular: sleep · anxiety · pain · pets · EMF · skeptic · cancer · autism</div></div>
+<div class="qt"><div class="q hot" onclick="fSk()">🔥 Skeptics (3,162)</div><div class="q" onclick="qf('sleep')">Sleep</div><div class="q" onclick="qf('anxiety')">Anxiety</div><div class="q" onclick="qf('pain')">Pain</div><div class="q" onclick="qf('energy')">Energy</div><div class="q" onclick="qf('pet')">🐾 Pets</div><div class="q" onclick="qf('cancer')">Cancer</div><div class="q" onclick="qf('autism')">Autism</div></div></div>
+<div class="sp"><div class="sp-h">Can't Be Placebo'd</div><div class="sg">
+<div class="sc s1" onclick="fSk()"><h3>🔥 Skeptics' Corner</h3><p>"I didn't believe it."</p><div class="sn">3,162</div></div>
+<div class="sc s2" onclick="fW('My Pet')"><h3>🐾 Pet Stories</h3><p>Dogs don't read marketing.</p><div class="sn">5,082</div></div>
+<div class="sc s3" onclick="fW('My Plants / Garden')"><h3>🌱 Plants</h3><p>Plants can't be placebo'd.</p><div class="sn">1,307</div></div>
+<div class="sc s4" onclick="fW('My Child / Family')"><h3>👨‍👩‍👧 Family</h3><p>When it works for your kid...</p><div class="sn">1,361</div></div>
+</div></div>
+<div class="ov" id="ov" onclick="closeF()"></div>
+<div class="ml"><aside class="sb" id="sb"><button class="mc" onclick="closeF()">✕ Close Filters</button><div id="fc"></div></aside>
+<main class="fd"><div class="fh"><h2 id="fT">All Stories</h2><span class="rc" id="rC">loading...</span></div><div id="feed"></div><div class="lm" id="lm" style="display:none"><button onclick="loadN()">Load More Stories</button></div><div class="loading" id="lg">Loading 19,023 testimonials...</div></main></div>
+<div class="hall"><div class="hall-i"><h2>⭐ Hall of Fame</h2><p class="hall-s">The stories that stopped us in our tracks.</p><div class="hg" id="hG"></div></div></div>
+<div class="sub"><div class="sub-i"><div class="sub-l"><h2>Have your own story?</h2><p>Your experience could help someone on the fence right now.</p><p>Whether it helped your sleep, your dog, your garden, or your peace of mind — we want to hear it.</p><div class="sub-st"><span>📝 19,023 stories shared so far</span><span>🕐 Takes about 2 minutes</span></div></div>
+<div class="sub-f"><div class="fg"><label>Your Name</label><input placeholder="e.g. Sarah M."></div><div class="fg"><label>Product Used</label><select><option value="">Select...</option><option>HEAL Capsule</option><option>Infinity Bloc</option><option>Quantum Bloc</option><option>Frequency Cards</option><option>Quantum Upgrade</option><option>Travel Bloc</option><option>Water Bottle</option><option>Clothing</option><option>Multiple</option></select></div><div class="fg"><label>Your Experience</label><textarea rows="4" placeholder="Just share what you noticed. The raw version is the most powerful."></textarea></div><div class="fg"><label>Were you skeptical?</label><div class="rr"><label class="rl"><input type="radio" name="sk"> Yes</label><label class="rl"><input type="radio" name="sk"> Somewhat</label><label class="rl"><input type="radio" name="sk"> No</label></div></div><button class="sb-btn">Share My Story →</button><p class="sb-n">May appear after review. We never edit your words.</p></div></div></div>
+<div class="cta-s"><h2>Ready to start your own experience?</h2><p>Join 19,023 people. Try Quantum Upgrade free for 7 days.</p><button>Try Quantum Upgrade Free →</button></div>
+<footer><p>Unedited experiences from real community members. Individual results vary. Not intended to diagnose, treat, cure, or prevent any disease.</p><p style="margin-top:8px;opacity:.5">ThankYouLeelaQ.com</p></footer>
+<script>
+let A=[],F=[],sh=0,B=30,st={},cf={t:null,v:null},sq='';
+function an(el,tg,d){let s=0;const f=t=>{if(!s)s=t;const p=Math.min((t-s)/d,1);el.textContent=Math.floor((1-Math.pow(1-p,3))*tg).toLocaleString();if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+const co=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){an(document.getElementById('heroN'),19023,2200);co.disconnect()}})});co.observe(document.getElementById('heroN'));
+fetch('testimonials.json').then(r=>r.json()).then(d=>{A=d.d;st=d.s;document.getElementById('lg').style.display='none';bF();bH();af()}).catch(()=>{document.getElementById('lg').textContent='Error loading. Please refresh.'});
+function bF(){const c=document.getElementById('fc');let h='<div class="fs"><h3>Who Benefited</h3>';
+h+='<div class="ft on" onclick="cF(this)"><span>All Stories</span><span class="ct">'+A.length.toLocaleString()+'</span></div>';
+[['My Pet','🐾 Pet'],['My Child / Family','👨‍👩‍👧 Family'],['My Plants / Garden','🌱 Plants']].forEach(([v,l])=>{h+='<div class="ft" onclick="sF(\'w\',\''+v+'\',this)"><span>'+l+'</span><span class="ct">'+(st.who_counts?.[v]||0).toLocaleString()+'</span></div>'});
+h+='</div><div class="fs"><h3>By Product</h3>';
+Object.entries(st.product_counts||{}).sort((a,b)=>b[1]-a[1]).slice(0,10).forEach(([p,n])=>{h+='<div class="ft" onclick="sF(\'p\',\''+p+'\',this)"><span>'+p+'</span><span class="ct">'+n.toLocaleString()+'</span></div>'});
+h+='</div><div class="fs"><h3>By Condition</h3>';
+Object.entries(st.condition_counts||{}).sort((a,b)=>b[1]-a[1]).forEach(([k,n])=>{h+='<div class="ft" onclick="sF(\'c\',\''+k+'\',this)"><span>'+k+'</span><span class="ct">'+n.toLocaleString()+'</span></div>'});
+h+='</div><div class="fs"><h3>Special</h3>';
+h+='<div class="ft" onclick="sF(\'s\',1,this)"><span>🔥 Skeptics</span><span class="ct">'+(st.skeptic_count||0).toLocaleString()+'</span></div>';
+h+='<div class="ft" onclick="sF(\'f\',1,this)"><span>⭐ Featured</span><span class="ct">'+(st.featured_count||940)+'</span></div></div>';
+c.innerHTML=h}
+function bH(){const f=A.filter(t=>t.f&&t.i==='h').slice(0,8);let h='';f.forEach(t=>{const q=t.t.length>180?t.t.slice(0,180)+'...':t.t;h+='<div class="hk"><div class="hq">"'+q.replace(/"/g,'&quot;')+'"</div><div class="hn">'+t.n+'</div><div class="hd">'+t.c.slice(0,2).join(' · ')+(t.r[0]?' · '+t.r[0]:'')+'</div></div>'});document.getElementById('hG').innerHTML=h}
+function sF(t,v,el){cf={t,v};sq='';document.getElementById('heroS').value='';document.getElementById('navS').value='';document.querySelectorAll('.ft').forEach(f=>f.classList.remove('on'));if(el)el.classList.add('on');af();if(window.innerWidth<=900)closeF()}
+function cF(el){cf={t:null,v:null};sq='';document.querySelectorAll('.ft').forEach(f=>f.classList.remove('on'));if(el)el.classList.add('on');af()}
+function fSk(){cf={t:'s',v:1};af()}
+function fW(w){cf={t:'w',v:w};af()}
+function qf(q){doSearch(q);document.getElementById('heroS').value=q;document.getElementById('navS').value=q}
+function doSearch(q){sq=q.toLowerCase().trim();cf={t:null,v:null};document.querySelectorAll('.ft').forEach(f=>f.classList.remove('on'));af()}
+function af(){const{t,v}=cf;if(sq){F=A.filter(x=>(x.t+' '+x.n+' '+x.c.join(' ')+' '+x.r.join(' ')).toLowerCase().includes(sq));document.getElementById('fT').textContent='Search: "'+sq+'"'}
+else if(t==='w'){F=A.filter(x=>x.w.includes(v));document.getElementById('fT').textContent=v}
+else if(t==='p'){F=A.filter(x=>x.r.includes(v));document.getElementById('fT').textContent=v}
+else if(t==='c'){F=A.filter(x=>x.c.includes(v));document.getElementById('fT').textContent=v}
+else if(t==='s'){F=A.filter(x=>x.s);document.getElementById('fT').textContent='🔥 Skeptics\' Corner'}
+else if(t==='f'){F=A.filter(x=>x.f);document.getElementById('fT').textContent='⭐ Featured Stories'}
+else{F=[...A];document.getElementById('fT').textContent='All Stories'}
+document.getElementById('rC').textContent=F.length.toLocaleString()+' stories';document.getElementById('navC').innerHTML='<strong>'+F.length.toLocaleString()+'</strong> stories';
+sh=0;document.getElementById('feed').innerHTML='';loadN()}
+function loadN(){const feed=document.getElementById('feed'),batch=F.slice(sh,sh+B);
+batch.forEach((t,i)=>{const idx=sh+i+1,sk=t.s,init=t.n.charAt(0).toUpperCase(),src=t.g==='QP'?'Quantum Power Community':'Quantum Upgrade Community';
+let tags='';t.c.forEach(c=>{tags+='<span class="b bc">'+c+'</span>'});t.r.forEach(p=>{tags+='<span class="b bp">'+p+'</span>'});if(sk)tags+='<span class="b bs">Skeptic → Believer</span>';t.w.forEach(w=>{const ic=w.includes('Pet')?'🐾':w.includes('Plant')?'🌱':'👨‍👩‍👧';tags+='<span class="b bw">'+ic+' '+w.replace('My ','')+'</span>'});
+const d=document.createElement('div');d.className='tc'+(sk?' sk':'');
+d.innerHTML='<div class="th"><div class="ta">'+init+'</div><div><div class="tn">'+t.n+'</div><div class="ts">'+src+(sk?' · <span style="color:var(--rose);font-weight:700">Skeptic → Believer</span>':'')+'</div></div></div><div class="tt" id="t'+idx+'">'+t.t+'</div><button class="te" onclick="event.stopPropagation();tg('+idx+')">Read full story →</button><div class="tu">Shared in the LeelaQ community. Unedited.</div><div class="tg">'+tags+'</div>';
+d.onclick=function(e){if(!e.target.classList.contains('te')&&!e.target.classList.contains('b'))tg(idx)};feed.appendChild(d)});
+sh+=batch.length;
+if(sh>0&&sh<F.length&&sh%B===0){const pc=((sh/F.length)*100).toFixed(1),rm=F.length-sh,sd=document.createElement('div');sd.className='sd';sd.innerHTML='<div class="dn">'+sh.toLocaleString()+' stories read.</div><div class="dm">'+rm.toLocaleString()+' remaining. That\'s '+pc+'% of the evidence.</div><div class="db"><div class="df" style="width:'+pc+'%"></div></div>';feed.appendChild(sd)}
+const lm=document.getElementById('lm');if(sh<F.length){lm.style.display='block';lm.querySelector('button').textContent='Load More ('+(F.length-sh).toLocaleString()+' remaining)'}else{lm.style.display=sh>0?'block':'none';if(sh>0)lm.innerHTML='<div style="font-family:var(--fh);font-size:13px;color:var(--muted);padding:12px">End of results. '+F.length.toLocaleString()+' stories.</div>'}}
+function tg(i){const t=document.getElementById('t'+i);if(!t)return;const o=t.classList.toggle('open');t.nextElementSibling.textContent=o?'Show less ↑':'Read full story →'}
+function openF(){document.getElementById('sb').classList.add('mo');document.getElementById('ov').classList.add('open');document.body.style.overflow='hidden'}
+function closeF(){document.getElementById('sb').classList.remove('mo');document.getElementById('ov').classList.remove('open');document.body.style.overflow=''}
+</script>
 </body>
 </html>
