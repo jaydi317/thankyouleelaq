@@ -84,6 +84,26 @@ nav{background:rgba(255,253,249,.92);border-bottom:1px solid var(--border);paddi
 .cta-s{text-align:center;padding:56px 20px;background:linear-gradient(180deg,var(--bg),#ede8e1)}
 .cta-s h2{font-family:var(--fh);font-size:clamp(22px,3.5vw,32px);font-weight:900;margin-bottom:6px}.cta-s p{font-size:15px;color:var(--muted);max-width:440px;margin:0 auto 20px;font-family:var(--fh)}
 .cta-s button{padding:14px 36px;background:var(--accent);color:#fff;font-family:var(--fh);font-weight:700;font-size:14px;border-radius:8px;border:none;cursor:pointer;transition:.2s}.cta-s button:hover{background:var(--accent2)}
+/* PROOF NAV */
+.proof-nav{background:#0c0c0e;display:flex;justify-content:space-between;align-items:center;padding:.45rem 1.5rem;font-family:var(--fm);font-size:.65rem;letter-spacing:.03em;position:relative;z-index:201;gap:.5rem}
+.proof-nav-links{display:flex;gap:.2rem;align-items:center}
+.proof-nav a{color:rgba(255,255,255,.5);text-decoration:none;padding:.3rem .7rem;border-radius:4px;transition:all .2s;white-space:nowrap;display:inline-flex;align-items:center;gap:5px}
+.proof-nav a:hover{color:rgba(255,255,255,.85)}
+.proof-nav a.active{color:white;background:rgba(255,255,255,.1)}
+.proof-nav .nav-count{font-size:.55rem;opacity:.5}
+.proof-nav-ctas{display:flex;gap:.4rem;align-items:center}
+.proof-nav .nav-cta{color:rgba(255,255,255,.6);text-decoration:none;padding:.3rem .7rem;border-radius:4px;white-space:nowrap;transition:all .2s;font-size:.6rem}
+.proof-nav .nav-cta:hover{color:white}
+.proof-nav .nav-cta-primary{background:var(--accent);color:white;padding:.3rem .9rem;border-radius:99px}
+.proof-nav .nav-cta-primary:hover{background:var(--accent2)}
+.proof-nav .nav-sep{width:1px;height:14px;background:rgba(255,255,255,.12);margin:0 .2rem}
+/* CROSS LINKS */
+.cross-links{max-width:700px;margin:0 auto;padding:0 2rem 2rem;text-align:center}
+.cross-link{display:block;padding:.6rem 0;font-size:.85rem;color:var(--muted);text-decoration:none;transition:color .2s;border-bottom:1px solid var(--border);font-weight:300}
+.cross-link:last-child{border-bottom:none}
+.cross-link:hover{color:var(--text)}
+.cross-link span{font-weight:500;color:var(--text)}
+@media(max-width:768px){.proof-nav{font-size:.55rem;padding:.4rem .8rem}.proof-nav a{padding:.25rem .5rem;gap:3px}.proof-nav .nav-count{display:none}.proof-nav .nav-cta{font-size:.55rem;padding:.25rem .5rem}.proof-nav .nav-cta-primary{padding:.25rem .7rem}.proof-nav .nav-sep{display:none}}
 footer{text-align:center;padding:28px 20px;border-top:1px solid var(--border)}footer p{font-family:var(--fh);font-size:10px;color:var(--muted);max-width:580px;margin:0 auto;line-height:1.5}
 @media(max-width:900px){.ml{grid-template-columns:1fr}.sb{display:none}.nf{display:block}.nc{display:none}
 .sb.mo{display:block;position:fixed;top:0;left:0;bottom:0;width:270px;z-index:301;background:var(--card);padding:16px;overflow-y:auto;max-height:100vh;box-shadow:4px 0 20px rgba(0,0,0,.15);animation:si .25s ease}
@@ -95,6 +115,18 @@ footer{text-align:center;padding:28px 20px;border-top:1px solid var(--border)}fo
 </style>
 </head>
 <body>
+<nav class="proof-nav">
+<div class="proof-nav-links">
+<a href="https://wedidthescience.com">📊 The Science <span class="nav-count">· 59 studies</span></a>
+<a href="https://iloveleelaq.com">📸 The Experiments <span class="nav-count">· 1,096</span></a>
+<a href="https://thankyouleelaq.com" class="active">💬 The Testimonials</a>
+</div>
+<div class="proof-nav-ctas">
+<a href="https://quantumupgrade.io" class="nav-cta nav-cta-primary">Try Quantum Upgrade Free →</a>
+<span class="nav-sep"></span>
+<a href="https://leelaq.com" class="nav-cta">Shop Products →</a>
+</div>
+</nav>
 <div class="disc">These are unedited experiences shared by real community members. Individual results vary. Leela Quantum Tech products are not intended to diagnose, treat, cure, or prevent any disease.</div>
 <nav><div class="nl">Thank<span>You</span>LeelaQ</div><button class="nf" onclick="openF()">☰ Filter</button>
 <div class="ns"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="navS" placeholder="Search stories..." oninput="doSearch(this.value)"></div>
@@ -115,8 +147,13 @@ footer{text-align:center;padding:28px 20px;border-top:1px solid var(--border)}fo
 <div class="hall"><div class="hall-i"><h2>⭐ Hall of Fame</h2><p class="hall-s">The stories that stopped us in our tracks.</p><div class="hg" id="hG"></div></div></div>
 <div class="sub"><div class="sub-i"><div class="sub-l"><h2>Have your own story?</h2><p>Your experience could help someone on the fence right now.</p><p>Whether it helped your sleep, your dog, your garden, or your peace of mind — we want to hear it.</p><div class="sub-st"><span>📝 19,023 stories shared so far</span><span>🕐 Takes about 2 minutes</span></div></div>
 <div class="sub-f"><div class="fg"><label>Your Name</label><input placeholder="e.g. Sarah M."></div><div class="fg"><label>Product Used</label><select><option value="">Select...</option><option>HEAL Capsule</option><option>Infinity Bloc</option><option>Quantum Bloc</option><option>Frequency Cards</option><option>Quantum Upgrade</option><option>Travel Bloc</option><option>Water Bottle</option><option>Clothing</option><option>Multiple</option></select></div><div class="fg"><label>Your Experience</label><textarea rows="4" placeholder="Just share what you noticed. The raw version is the most powerful."></textarea></div><div class="fg"><label>Were you skeptical?</label><div class="rr"><label class="rl"><input type="radio" name="sk"> Yes</label><label class="rl"><input type="radio" name="sk"> Somewhat</label><label class="rl"><input type="radio" name="sk"> No</label></div></div><button class="sb-btn">Share My Story →</button><p class="sb-n">May appear after review. We never edit your words.</p></div></div></div>
-<div class="cta-s"><h2>Ready to start your own experience?</h2><p>Join 19,023 people. Try Quantum Upgrade free for 7 days.</p><button>Try Quantum Upgrade Free →</button></div>
-<footer><p>Unedited experiences from real community members. Individual results vary. Not intended to diagnose, treat, cure, or prevent any disease.</p><p style="margin-top:8px;opacity:.5">ThankYouLeelaQ.com</p></footer>
+<div class="cross-links">
+<a href="https://iloveleelaq.com" class="cross-link">Want to see photos and experiments? → <span>1,096 visual experiments at ILoveLeelaQ.com</span></a>
+<a href="https://wedidthescience.com" class="cross-link">Want the hardcore science? → <span>59 double-blind studies at WeDidTheScience.com</span></a>
+<a href="https://leelaq.com" class="cross-link">Want to try the physical products? → <span>Shop LeelaQ.com</span></a>
+</div>
+<div class="cta-s"><h2>Ready to write your own story?</h2><p>19,023 people already shared theirs. Try Quantum Upgrade free for 7 days — no credit card required.</p><a href="https://quantumupgrade.io" style="display:inline-block;padding:14px 36px;background:var(--accent);color:#fff;font-family:var(--fh);font-weight:700;font-size:14px;border-radius:8px;text-decoration:none;transition:.2s">Start Your Free Trial →</a></div>
+<footer><p>Unedited experiences from real community members. Individual results vary. Not intended to diagnose, treat, cure, or prevent any disease.</p><p style="margin-top:8px;opacity:.5">ThankYouLeelaQ.com</p><p style="margin-top:6px;opacity:.35"><a href="https://ineedjimmy.com" style="color:inherit;text-decoration:none">Built with ❤️ by INeedJimmy.com</a></p></footer>
 <script>
 let A=[],F=[],sh=0,B=30,st={},cf={t:null,v:null},sq='';
 function an(el,tg,d){let s=0;const f=t=>{if(!s)s=t;const p=Math.min((t-s)/d,1);el.textContent=Math.floor((1-Math.pow(1-p,3))*tg).toLocaleString();if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
