@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Energy of Everything — A Free Gift From Philipp</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --cream: #faf6f0;
+  --cream-dark: #f0eae0;
+  --warm-white: #fefcf8;
+  --ink: #1a1410;
+  --ink-light: #3d3429;
+  --ink-muted: #7a6e5f;
+  --sage: #7a8c6e;
+  --sage-dark: #5a6b4e;
+  --sage-light: #e8ede4;
+  --terracotta: #c4613a;
+  --terracotta-light: #fdf0eb;
+  --gold-warm: #b8963e;
+  --gold-glow: #d4af37;
+  --amazon-orange: #e47911;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-accent: 'Cormorant Garamond', serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ======== TOP BAR ======== */
+.top-bar {
+  background: var(--ink);
+  color: var(--cream);
+  text-align: center;
+  padding: 10px 20px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.top-bar span { color: var(--gold-warm); }
+
+/* ======== HERO ======== */
+.hero {
+  padding: 70px 20px 60px;
+  background: var(--warm-white);
+  position: relative;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(var(--ink-muted), transparent);
+}
+.hero-eyebrow {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.15;
+  max-width: 750px;
+  margin: 0 auto 12px;
+  color: var(--ink);
+  text-align: center;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+.hero-sub {
+  font-family: var(--font-accent);
+  font-size: 22px;
+  color: var(--ink-muted);
+  max-width: 550px;
+  margin: 0 auto 45px;
+  font-style: italic;
+  text-align: center;
+}
+
+.hero-book-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.book-image-wrap {
+  position: relative;
+  flex-shrink: 0;
+  justify-self: end;
+}
+.book-image-wrap img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 10px 14px 40px rgba(26,20,16,0.22);
+}
+.bestseller-flag {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: var(--terracotta);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 2px;
+  box-shadow: 0 3px 12px rgba(196,97,58,0.35);
+}
+.hero-offer-text {
+  text-align: left;
+  max-width: 360px;
+}
+.hero-offer-text .free-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.hero-offer-text h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+.hero-offer-text p {
+  font-size: 15px;
+  color: var(--ink-muted);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--terracotta);
+  color: white;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.cta-btn:hover {
+  background: #a8512e;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(196,97,58,0.3);
+}
+.cta-btn small {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 4px;
+  opacity: 0.85;
+}
+
+/* ======== DIVIDER QUOTE ======== */
+.divider-quote {
+  padding: 60px 20px;
+  background: var(--cream);
+  text-align: center;
+}
+.divider-quote blockquote {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--ink-light);
+}
+.divider-quote cite {
+  display: block;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  margin-top: 20px;
+}
+
+/* ======== ABOUT ======== */
+.about-section {
+  padding: 80px 20px;
+  background: var(--warm-white);
+}
+.about-inner {
+  max-width: 850px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 50px;
+  align-items: start;
+}
+.about-left .label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.about-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 25px rgba(26,20,16,0.15);
+  margin-bottom: 18px;
+  border: 4px solid var(--cream-dark);
+}
+.about-left .creds {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.8;
+}
+.about-right h2 {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.about-right p {
+  font-size: 16px;
+  color: var(--ink-light);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+.stat-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(26,20,16,0.1);
+}
+.stat-item .stat-num {
+  font-family: var(--font-display);
+  font-size: 30px;
+  color: var(--terracotta);
+}
+.stat-item .stat-label {
+  font-size: 11px;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ======== SCIENCE RIBBON ======== */
+.science-ribbon {
+  padding: 50px 20px;
+  background: var(--sage-light);
+  text-align: center;
+}
+.science-ribbon .label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.science-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.science-stats .s-stat .s-num {
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--ink);
+}
+.science-stats .s-stat .s-label {
+  font-size: 12px;
+  color: var(--sage-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ======== INSIDE THE BOOK ======== */
+.inside-section {
+  padding: 80px 20px;
+  background: var(--cream);
+}
+.section-head {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+.section-head .label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.section-head h2 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 400;
+}
+.theme-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.theme-card {
+  background: var(--warm-white);
+  border: 1px solid rgba(26,20,16,0.08);
+  border-radius: 4px;
+  padding: 30px 25px;
+  transition: all 0.3s;
+}
+.theme-card:hover {
+  border-color: var(--sage);
+  box-shadow: 0 4px 20px rgba(26,20,16,0.06);
+}
+.theme-card .icon {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.theme-card h4 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.theme-card p {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+/* ======== TESTIMONIALS ======== */
+.testimonials-section {
+  padding: 80px 20px;
+  background: var(--warm-white);
+}
+/* Authority endorsements */
+.endorsement-featured {
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+.endorsement-big {
+  padding: 35px;
+  border: 1px solid rgba(26,20,16,0.08);
+  border-radius: 6px;
+  background: var(--cream);
+  margin-bottom: 20px;
+}
+.endorsement-big blockquote {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-style: italic;
+  color: var(--ink-light);
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.endorsement-big .attr {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--terracotta);
+  font-weight: 600;
+}
+.endorsement-big .attr span {
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+
+/* Amazon reviews */
+.amazon-reviews-section {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.amazon-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.amazon-stars {
+  color: var(--amazon-orange);
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.amazon-header .ah-text {
+  font-size: 14px;
+  color: var(--ink-muted);
+}
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.review-card {
+  padding: 24px;
+  border: 1px solid rgba(26,20,16,0.08);
+  border-radius: 6px;
+  background: var(--cream);
+  position: relative;
+}
+.review-card.featured {
+  grid-column: 1 / -1;
+  border-color: var(--amazon-orange);
+  border-width: 2px;
+}
+.review-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fef3e2;
+  color: var(--amazon-orange);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.review-badge .check { font-size: 12px; }
+.review-stars {
+  color: var(--amazon-orange);
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.review-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.review-card blockquote {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+.review-attr {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-light);
+}
+
+/* ======== OFFER ======== */
+.offer-section {
+  padding: 80px 20px;
+  background: var(--ink);
+  color: var(--cream);
+}
+.offer-inner {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.offer-inner .label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold-warm);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.offer-inner h2 {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 25px;
+  color: var(--cream);
+}
+.offer-list {
+  text-align: left;
+  margin: 30px auto;
+  max-width: 480px;
+}
+.offer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(250,246,240,0.08);
+}
+.offer-item .item-name { font-size: 15px; color: var(--cream); }
+.offer-item .item-value {
+  font-size: 13px;
+  color: var(--ink-muted);
+  text-decoration: line-through;
+}
+.offer-item .item-free {
+  color: var(--gold-warm);
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 8px;
+  text-decoration: none;
+}
+.offer-total {
+  text-align: center;
+  margin: 35px 0 30px;
+}
+.offer-total .total-label {
+  font-family: var(--font-accent);
+  font-size: 18px;
+  color: var(--ink-muted);
+  margin-bottom: 5px;
+}
+.offer-total .total-price {
+  font-family: var(--font-display);
+  font-size: 48px;
+  color: var(--gold-warm);
+}
+.offer-total .total-price small {
+  font-size: 18px;
+  color: var(--ink-muted);
+  font-family: var(--font-body);
+}
+.cta-btn-light {
+  display: inline-block;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 18px 44px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.cta-btn-light:hover {
+  background: var(--gold-warm);
+  color: white;
+}
+.cta-btn-light small {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+.offer-note {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* ======== GUARANTEE ======== */
+.guarantee-section {
+  padding: 60px 20px;
+  background: var(--cream);
+  text-align: center;
+}
+.guarantee-box {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 35px;
+  border: 1px solid rgba(26,20,16,0.1);
+  border-radius: 4px;
+}
+.guarantee-box h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.guarantee-box p {
+  font-size: 15px;
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+
+/* ======== PROOF ECOSYSTEM ======== */
+.proof-ecosystem {
+  padding: 70px 20px;
+  background: var(--ink);
+}
+.proof-eco-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.proof-eco-inner .eco-label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold-warm);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.proof-eco-inner h2 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 12px;
+}
+.proof-eco-inner .eco-sub {
+  font-size: 15px;
+  color: var(--ink-muted);
+  margin-bottom: 40px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.eco-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.eco-card {
+  background: rgba(250,246,240,0.04);
+  border: 1px solid rgba(250,246,240,0.1);
+  border-radius: 6px;
+  padding: 30px 24px;
+  text-align: left;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.eco-card:hover {
+  border-color: var(--gold-warm);
+  background: rgba(250,246,240,0.07);
+  transform: translateY(-3px);
+}
+.eco-card .eco-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.eco-card h4 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--cream);
+  margin-bottom: 6px;
+}
+.eco-card .eco-stat {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--gold-warm);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.eco-card p {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+.eco-card .eco-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold-warm);
+  font-weight: 600;
+}
+
+/* ======== FINAL ======== */
+.final-section {
+  padding: 80px 20px;
+  background: var(--warm-white);
+  text-align: center;
+}
+.final-section h2 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.3;
+  max-width: 600px;
+  margin: 0 auto 15px;
+}
+.final-section h2 em { color: var(--terracotta); }
+.final-section p {
+  font-size: 16px;
+  color: var(--ink-muted);
+  max-width: 480px;
+  margin: 0 auto 30px;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background: var(--ink);
+  color: var(--ink-muted);
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.8;
+}
+footer a { color: var(--ink-muted); text-decoration: underline; }
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 36px; }
+  .hero-book-area { grid-template-columns: 1fr; justify-items: center; gap: 30px; }
+  .hero-offer-text { text-align: center; }
+  .book-image-wrap { justify-self: center; }
+  .book-image-wrap img { width: 250px; }
+  .about-inner { grid-template-columns: 1fr; text-align: center; }
+  .about-photo { margin: 0 auto 15px; }
+  .about-left .creds { text-align: center; }
+  .theme-grid { grid-template-columns: 1fr; }
+  .review-grid { grid-template-columns: 1fr; }
+  .stat-row { flex-direction: column; gap: 15px; align-items: center; }
+  .eco-grid { grid-template-columns: 1fr; }
+  .endorsement-big blockquote { font-size: 19px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">A gift from <span>Philipp von Holtzendorff-Fehling</span> — Free Book, Just Cover Shipping</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">International Best Seller · 59+ Scientific Studies</div>
+  <h1>The Energy <em>of Everything</em></h1>
+  <p class="hero-sub">Rediscovering vitality through quantum wellness — the book that bridges science, spirit, and self-mastery.</p>
+
+  <div class="hero-book-area">
+    <div class="book-image-wrap">
+      <img src="book-3d.png" alt="The Energy of Everything by Philipp von Holtzendorff-Fehling">
+      <div class="bestseller-flag">Free + Shipping</div>
+    </div>
+    <div class="hero-offer-text">
+      <div class="free-label">Free — Just Cover Shipping</div>
+      <h3>Receive the hardcover book at no cost.</h3>
+      <p>162 pages of insight connecting quantum energy, consciousness, and practical wellness. Backed by 59+ independent scientific studies. Endorsed by Luke Storey, Dave Asprey, Ben Greenfield, and leading practitioners worldwide.</p>
+      <a href="#offer" class="cta-btn">
+        Request Your Free Copy
+        <small>$9.95 shipping &amp; handling</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER QUOTE — LUKE STOREY -->
+<section class="divider-quote">
+  <blockquote>"In a world awash with health hacks and surface-level wellness trends, this book is a breath of fresh, quantum-charged air."</blockquote>
+  <cite>— Luke Storey, Host of The Life Stylist Podcast</cite>
+</section>
+
+<!-- ABOUT THE AUTHOR -->
+<section class="about-section">
+  <div class="about-inner">
+    <div class="about-left">
+      <div class="label">About the Author</div>
+      <img src="philipp-photo.png" alt="Philipp von Holtzendorff-Fehling" class="about-photo">
+      <div class="creds">
+        Former VP, T-Mobile<br>
+        20+ Years Energy Research<br>
+        Founder &amp; CEO, Leela Quantum Tech<br>
+        Author &amp; Consciousness Coach<br>
+        <em style="color: var(--sage-dark); font-size: 12px;">Note: He's wearing his H.E.A.L. Capsule in every photo. Always.</em>
+      </div>
+    </div>
+    <div class="about-right">
+      <h2>From corporate boardrooms to quantum breakthroughs</h2>
+      <p>Philipp von Holtzendorff-Fehling spent years leading large organizations at T-Mobile across three continents. But his parallel journey — two decades of studying energy healing, consciousness, and quantum physics — led him to a discovery he couldn't keep to himself.</p>
+      <p>He founded Leela Quantum Tech, which now has more scientific studies behind it than any comparable company in the world. Then he wrote it all down in plain, accessible language — for seekers, biohackers, and anyone who's ever felt there's more to health than what meets the eye.</p>
+      <div class="stat-row">
+        <div class="stat-item">
+          <div class="stat-num">59+</div>
+          <div class="stat-label">Scientific Studies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">48+</div>
+          <div class="stat-label">Placebo-Controlled</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">20K+</div>
+          <div class="stat-label">Community Testimonials</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE RIBBON -->
+<section class="science-ribbon">
+  <div class="label">The Research Speaks for Itself</div>
+  <div class="science-stats">
+    <div class="s-stat">
+      <div class="s-num">100%</div>
+      <div class="s-label">Blood Cell Recovery</div>
+    </div>
+    <div class="s-stat">
+      <div class="s-num">20-29%</div>
+      <div class="s-label">ATP Increase</div>
+    </div>
+    <div class="s-stat">
+      <div class="s-num">77.6%</div>
+      <div class="s-label">Brain Stress Reduced</div>
+    </div>
+    <div class="s-stat">
+      <div class="s-num">13×</div>
+      <div class="s-label">Alpha Wave Increase</div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIDE THE BOOK -->
+<section class="inside-section">
+  <div class="section-head">
+    <div class="label">What Awaits You Inside</div>
+    <h2>Six transformative themes, one book</h2>
+  </div>
+  <div class="theme-grid">
+    <div class="theme-card">
+      <div class="icon">◇</div>
+      <h4>The Energetic Blueprint</h4>
+      <p>How unseen forces shape your emotions, decisions, and relationships — and how to recognize them.</p>
+    </div>
+    <div class="theme-card">
+      <div class="icon">⟐</div>
+      <h4>Quantum Science, Simply</h4>
+      <p>Complex physics made accessible. No PhD required — just curiosity and an open mind.</p>
+    </div>
+    <div class="theme-card">
+      <div class="icon">⊹</div>
+      <h4>Energy Protection</h4>
+      <p>Practical tools to identify when you've absorbed energy that isn't yours — and how to release it gently.</p>
+    </div>
+    <div class="theme-card">
+      <div class="icon">◎</div>
+      <h4>Structured Water</h4>
+      <p>The science behind water structuring and its measurable effects on cellular regeneration.</p>
+    </div>
+    <div class="theme-card">
+      <div class="icon">△</div>
+      <h4>Frequency Medicine</h4>
+      <p>How specific frequencies affect your sleep, cognition, and overall vitality — backed by research.</p>
+    </div>
+    <div class="theme-card">
+      <div class="icon">☉</div>
+      <h4>Consciousness &amp; Healing</h4>
+      <p>The bridge between awareness, intention, and physical transformation. Your innate healing intelligence.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS — AUTHORITY + AMAZON -->
+<section class="testimonials-section">
+  <div class="section-head">
+    <div class="label">What People Are Saying</div>
+    <h2>Endorsed by practitioners, loved by readers</h2>
+  </div>
+
+  <!-- Authority Endorsements -->
+  <div class="endorsement-featured">
+    <div class="endorsement-big">
+      <blockquote>"Philipp has created a transformative roadmap for activating the body's innate energy field and unlocking peak human potential. Both visionary and deeply practical."</blockquote>
+      <div class="attr">Dr. Jyun Shimizu, Ph.D. <span>— Integrative Medicine &amp; Acupuncture</span></div>
+    </div>
+  </div>
+
+  <!-- Amazon Reviews -->
+  <div class="amazon-reviews-section">
+    <div class="amazon-header">
+      <span class="amazon-stars">★★★★★</span>
+      <span class="ah-text">What Amazon readers are saying</span>
+    </div>
+
+    <div class="review-grid">
+      <!-- FEATURED: Kevin E. Johnson — Skeptic Turned Believer -->
+      <div class="review-card featured">
+        <div class="review-badge"><span class="check">✓</span> Verified Amazon Review</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">"I honestly didn't expect to enjoy this book as much as I did."</div>
+        <blockquote>"I've read plenty of things about energy and healing before, but this one felt different. It's smart, grounded, and full of those 'aha' moments that make you stop and think. It's not some fluffy 'just believe' kind of book. It's practical, well-researched, and clearly written by someone who's passionate but also grounded in reality."</blockquote>
+        <div class="review-attr">— Kevin E. Johnson</div>
+      </div>
+
+      <!-- Ronald Beauford -->
+      <div class="review-card">
+        <div class="review-badge"><span class="check">✓</span> Verified Amazon Review</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">"Perfect for skeptics or seekers"</div>
+        <blockquote>"A sharp, practical fusion of quantum physics and holistic wellness. Backed by studies and raw case studies. Insightful, credible, and actionable."</blockquote>
+        <div class="review-attr">— Ronald Beauford</div>
+      </div>
+
+      <!-- Arieal Stevenson -->
+      <div class="review-card">
+        <div class="review-badge"><span class="check">✓</span> Verified Amazon Review</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">"It doesn't argue. It integrates."</div>
+        <blockquote>"It honors wisdom without nostalgia and embraces science without pride. One of the book's strongest qualities is how it redefines healing — as an innate ability we all carry."</blockquote>
+        <div class="review-attr">— Arieal Stevenson</div>
+      </div>
+
+      <!-- Todd Shipman -->
+      <div class="review-card">
+        <div class="review-badge"><span class="check">✓</span> Verified Amazon Review</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">"A real-world performance advantage"</div>
+        <blockquote>"As someone deeply immersed in both high performance and energy awareness, this completely resonated with me. It bridges science, spirituality, and daily life in a way that feels both grounded and transformative."</blockquote>
+        <div class="review-attr">— Todd Shipman</div>
+      </div>
+
+      <!-- Chrnv -->
+      <div class="review-card">
+        <div class="review-badge"><span class="check">✓</span> Verified Amazon Review</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">"Grounding and expansive at the same time"</div>
+        <blockquote>"It's one of those books that doesn't try to teach you — it just awakens something you already know. Simple, honest. Definitely a book to keep, re-read, and gift to the people you love."</blockquote>
+        <div class="review-attr">— Chrnv</div>
+      </div>
+
+      <!-- Haneef S. -->
+      <div class="review-card">
+        <div class="review-badge"><span class="check">✓</span> Verified Amazon Review</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">"This one stands apart"</div>
+        <blockquote>"I've read countless wellness books, but this one stands apart. It merges deep wisdom with real-world application. The way Philipp explains frequency medicine and how we can reconnect with our true energetic nature is simply revolutionary."</blockquote>
+        <div class="review-attr">— Haneef S.</div>
+      </div>
+
+      <!-- Jamie H -->
+      <div class="review-card">
+        <div class="review-badge"><span class="check">✓</span> Verified Amazon Review</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">"All masterfully woven together"</div>
+        <blockquote>"While we all might have read about ancient wisdom practices, quantum energy and healing frequencies, or the science separately — this is the first time I've seen them all masterfully woven together in one book."</blockquote>
+        <div class="review-attr">— Jamie H.</div>
+      </div>
+
+      <!-- Coffee table review -->
+      <div class="review-card">
+        <div class="review-badge"><span class="check">✓</span> Verified Amazon Review</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">"Will sit on my coffee table"</div>
+        <blockquote>"This book will sit out on my coffee table so anyone who comes over can read it, and so I can be reminded daily of all the amazing potential that comes with quantum healing."</blockquote>
+        <div class="review-attr">— Amazon Reader</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer-section" id="offer">
+  <div class="offer-inner">
+    <div class="label">Your Invitation</div>
+    <h2>Everything included — yours free</h2>
+
+    <div class="offer-list">
+      <div class="offer-item">
+        <span class="item-name">The Energy of Everything (Hardcover, 162pp)</span>
+        <span><span class="item-value">$20</span><span class="item-free">Free</span></span>
+      </div>
+      <div class="offer-item">
+        <span class="item-name">Quick-Start Energy Self-Assessment</span>
+        <span><span class="item-value">$27</span><span class="item-free">Free</span></span>
+      </div>
+      <div class="offer-item">
+        <span class="item-name">7-Day Quantum Upgrade Trial</span>
+        <span><span class="item-value">$47</span><span class="item-free">Free</span></span>
+      </div>
+      <div class="offer-item">
+        <span class="item-name">59+ Studies Research Summary</span>
+        <span><span class="item-value">$19</span><span class="item-free">Free</span></span>
+      </div>
+    </div>
+
+    <div class="offer-total">
+      <div class="total-label">Total value: $113</div>
+      <div class="total-price">Free <small>+ $9.95 shipping</small></div>
+    </div>
+
+    <a href="#" class="cta-btn-light">
+      Request Your Free Copy
+      <small>Just $9.95 shipping &amp; handling</small>
+    </a>
+
+    <p class="offer-note">No subscriptions. No hidden fees. The book is yours to keep.</p>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee-section">
+  <div class="guarantee-box">
+    <h3>Our Promise to You</h3>
+    <p>Read the book. Sit with its ideas. If it doesn't shift the way you think about health, energy, and your own potential, simply let us know within 30 days. We'll refund your shipping — and you keep the book. No conditions.</p>
+  </div>
+</section>
+
+<!-- PROOF ECOSYSTEM -->
+<section class="proof-ecosystem">
+  <div class="proof-eco-inner">
+    <div class="eco-label">Go Deeper</div>
+    <h2>The book is just the beginning</h2>
+    <p class="eco-sub">Explore the research, the experiments, and the 19,023 real stories from people who tried this technology.</p>
+
+    <div class="eco-grid">
+      <a href="https://wedidthescience.com" target="_blank" class="eco-card">
+        <div class="eco-icon">📊</div>
+        <h4>The Science</h4>
+        <div class="eco-stat">60+ Studies · 0 Failures</div>
+        <p>Every study. Every institution. Every result. Blood, brain, cells, water, plants, animals — 60+ independent studies from 12 institutions across 4 countries. Not one failure. Browse them all.</p>
+        <span class="eco-link">WeDidTheScience.com →</span>
+      </a>
+
+      <a href="https://iloveleelaq.com" target="_blank" class="eco-card">
+        <div class="eco-icon">📸</div>
+        <h4>The Experiments</h4>
+        <div class="eco-stat">1,096 Experiments · Zero Paid Actors</div>
+        <p>What happens when you charge water, grow plants, or test your blood? Over 1,000 community members found out — and photographed the results. Every photo real. Every word unedited.</p>
+        <span class="eco-link">ILoveLeelaQ.com →</span>
+      </a>
+
+      <a href="https://thankyouleelaq.com" target="_blank" class="eco-card">
+        <div class="eco-icon">💬</div>
+        <h4>The Testimonials</h4>
+        <div class="eco-stat">19,023 Real Stories</div>
+        <p>Sleep. Anxiety. Pain. Pets. Plants. Skeptics who changed their minds. Filter by condition, by product, or dive into the Skeptics' Corner — 3,162 people who didn't believe until they did.</p>
+        <span class="eco-link">ThankYouLeelaQ.com →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-section">
+  <h2>Everything is energy. This book shows you <em>how to work with it.</em></h2>
+  <p>Receive your free hardcover copy — just cover $9.95 shipping. No subscriptions. No obligations. Just a book that could change the way you experience life.</p>
+  <a href="#offer" class="cta-btn">
+    Send Me the Book
+    <small>Free — just pay shipping</small>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Leela Quantum Tech. All rights reserved.</p>
+  <p style="max-width: 650px; margin: 10px auto;">This book contains information about health and wellness topics and is not intended to replace medical advice. Always consult your healthcare provider before making changes to your health regimen. Results referenced are from scientific studies and individual experiences may vary. These statements have not been evaluated by the FDA. Leela Quantum Tech products are not intended to diagnose, treat, cure, or prevent any disease.</p>
+  <p>
+    <a href="https://leelaq.com">LeelaQ.com</a> ·
+    <a href="https://quantumupgrade.io">Quantum Upgrade</a> ·
+    <a href="https://wedidthescience.com">The Science</a> ·
+    <a href="https://iloveleelaq.com">The Experiments</a> ·
+    <a href="https://thankyouleelaq.com">The Testimonials</a>
+  </p>
+  <p style="margin-top: 8px;"><a href="https://ineedjimmy.com">Built with ❤️ by INeedJimmy.com</a></p>
+</footer>
+
+</body>
+</html>
