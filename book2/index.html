@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Energy of Everything - FREE Book by Philipp von Holtzendorff-Fehling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-dark: #0c0f14;
+  --bg-section: #111621;
+  --bg-card: #1a1f2e;
+  --gold: #c9a84c;
+  --gold-light: #e8d48b;
+  --green-cta: #2ea043;
+  --green-hover: #3fb950;
+  --red: #d63031;
+  --cream: #f5f0e8;
+  --white: #ffffff;
+  --gray-light: #b0b8c8;
+  --gray-mid: #6b7280;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --font-handwritten: 'Caveat', cursive;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-dark);
+  color: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.highlight {
+  background: linear-gradient(transparent 55%, rgba(201, 168, 76, 0.35) 55%);
+  padding: 0 2px;
+}
+
+.highlight-red {
+  background: linear-gradient(transparent 55%, rgba(214, 48, 49, 0.3) 55%);
+  padding: 0 2px;
+}
+
+/* ===== ANNOUNCEMENT BAR ===== */
+.announcement-bar {
+  background: var(--red);
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(175deg, #0c0f14 0%, #161c2d 40%, #1a1225 100%);
+  padding: 60px 20px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--red);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 4px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: var(--cream);
+}
+
+.hero h1 em {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.hero-sub {
+  font-size: 19px;
+  color: var(--gray-light);
+  margin-bottom: 20px;
+  max-width: 520px;
+}
+
+.hero-stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.hero-stars .stars {
+  color: #f59e0b;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.hero-stars span {
+  color: var(--gray-light);
+  font-size: 14px;
+}
+
+.hero-book {
+  position: relative;
+  text-align: center;
+}
+
+.hero-book img {
+  max-width: 380px;
+  width: 100%;
+  filter: drop-shadow(0 20px 60px rgba(201, 168, 76, 0.15));
+  transform: perspective(800px) rotateY(-5deg);
+  transition: transform 0.4s;
+}
+
+.hero-book:hover img {
+  transform: perspective(800px) rotateY(0deg);
+}
+
+.hero-arrow {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  font-family: var(--font-handwritten);
+  font-size: 22px;
+  color: var(--gold);
+  transform: rotate(-12deg);
+}
+
+.hero-arrow::after {
+  content: '↙';
+  font-size: 28px;
+  display: block;
+  margin-top: -5px;
+}
+
+/* ===== CTA BUTTON ===== */
+.cta-btn {
+  display: inline-block;
+  background: var(--green-cta);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(46, 160, 67, 0.4);
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-btn:hover {
+  background: var(--green-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(46, 160, 67, 0.5);
+}
+
+.cta-btn small {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+.cta-secure {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--gray-mid);
+  margin-top: 10px;
+}
+
+/* ===== AS SEEN ON ===== */
+.as-seen-on {
+  background: var(--bg-section);
+  padding: 40px 20px;
+  border-top: 1px solid rgba(201, 168, 76, 0.15);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.as-seen-on-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.as-seen-on p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gray-mid);
+  margin-bottom: 24px;
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-row span {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 1px;
+  padding: 8px 0;
+  text-transform: uppercase;
+}
+
+/* ===== STATS BAR ===== */
+.stats-bar {
+  background: linear-gradient(135deg, var(--bg-card) 0%, #1e2436 100%);
+  padding: 40px 20px;
+}
+
+.stats-bar-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.stat-item .stat-num {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--gold);
+}
+
+.stat-item .stat-label {
+  font-size: 13px;
+  color: var(--gray-light);
+  margin-top: 4px;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 80px 20px;
+}
+
+.section-alt {
+  background: var(--bg-section);
+}
+
+.section-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.section-wide {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--cream);
+  line-height: 1.2;
+}
+
+.section h2 em {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--gray-light);
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== LETTER SECTION ===== */
+.letter {
+  background: var(--cream);
+  color: #1a1a1a;
+  padding: 60px 20px;
+}
+
+.letter-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.letter-from {
+  font-family: var(--font-display);
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.letter-from strong {
+  color: var(--bg-dark);
+}
+
+.letter p {
+  font-size: 17px;
+  margin-bottom: 18px;
+  color: #2d2d2d;
+  line-height: 1.8;
+}
+
+.letter .author-img {
+  float: right;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 0 0 20px 30px;
+  border: 4px solid var(--gold);
+  background: #ddd;
+}
+
+.letter .author-placeholder {
+  float: right;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  margin: 0 0 20px 30px;
+  border: 4px solid var(--gold);
+  background: linear-gradient(135deg, #c9a84c22, #c9a84c44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-handwritten);
+  font-size: 16px;
+  color: var(--gold);
+  text-align: center;
+}
+
+.letter-highlight {
+  background: linear-gradient(transparent 55%, #fef08a 55%);
+  font-weight: 700;
+}
+
+.letter blockquote {
+  border-left: 4px solid var(--gold);
+  padding: 16px 24px;
+  margin: 24px 0;
+  background: rgba(201, 168, 76, 0.08);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 20px;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+/* ===== CHAPTER PREVIEW ===== */
+.chapters-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chapter-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 168, 76, 0.12);
+  border-radius: 12px;
+  padding: 24px;
+  transition: border-color 0.3s;
+}
+
+.chapter-card:hover {
+  border-color: var(--gold);
+}
+
+.chapter-num {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.chapter-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--cream);
+}
+
+.chapter-desc {
+  font-size: 14px;
+  color: var(--gray-light);
+  line-height: 1.6;
+}
+
+/* ===== BULLET STACK ===== */
+.bullets {
+  list-style: none;
+}
+
+.bullets li {
+  padding: 14px 0;
+  padding-left: 36px;
+  position: relative;
+  font-size: 17px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.bullets li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--green-cta);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.bullets li strong {
+  color: var(--cream);
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 28px;
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  font-family: var(--font-display);
+  font-size: 60px;
+  color: var(--gold);
+  opacity: 0.3;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  line-height: 1;
+}
+
+.testimonial-card .quote {
+  font-size: 15px;
+  color: var(--gray-light);
+  font-style: italic;
+  margin-bottom: 16px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-card .author-name {
+  font-weight: 700;
+  color: var(--cream);
+  font-size: 15px;
+}
+
+.testimonial-card .author-title {
+  font-size: 13px;
+  color: var(--gray-mid);
+}
+
+/* Authority Endorsement */
+.endorsement {
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.08), transparent);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 16px;
+  padding: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.endorsement .quote {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-style: italic;
+  color: var(--cream);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.endorsement .author-name {
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.endorsement .author-title {
+  font-size: 14px;
+  color: var(--gray-mid);
+}
+
+/* ===== PROOF / SCIENCE ===== */
+.proof-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 32px;
+  border-left: 4px solid var(--gold);
+  margin-bottom: 20px;
+}
+
+.proof-card h4 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.proof-card p {
+  color: var(--gray-light);
+  font-size: 15px;
+}
+
+.proof-card .result {
+  display: inline-block;
+  background: rgba(46, 160, 67, 0.15);
+  color: var(--green-cta);
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* ===== OFFER STACK ===== */
+.offer-stack {
+  background: var(--bg-card);
+  border: 2px solid var(--gold);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.offer-header {
+  background: linear-gradient(135deg, var(--gold), #a88832);
+  padding: 20px;
+  text-align: center;
+}
+
+.offer-header h3 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--bg-dark);
+}
+
+.offer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.offer-item:last-child {
+  border-bottom: none;
+}
+
+.offer-item .check {
+  color: var(--green-cta);
+  font-size: 20px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.offer-item .name {
+  flex: 1;
+}
+
+.offer-item .name strong {
+  color: var(--cream);
+  display: block;
+  font-size: 16px;
+}
+
+.offer-item .name small {
+  color: var(--gray-mid);
+  font-size: 13px;
+}
+
+.offer-item .value {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.offer-item .value .original {
+  color: var(--gray-mid);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.offer-item .value .free {
+  color: var(--green-cta);
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+}
+
+.offer-total {
+  background: rgba(201, 168, 76, 0.08);
+  padding: 24px;
+  text-align: center;
+}
+
+.offer-total .total-value {
+  font-size: 18px;
+  color: var(--gray-light);
+  margin-bottom: 4px;
+}
+
+.offer-total .total-value s {
+  color: var(--gray-mid);
+}
+
+.offer-total .your-price {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--green-cta);
+}
+
+.offer-total .your-price small {
+  font-size: 18px;
+  color: var(--cream);
+  font-weight: 400;
+}
+
+/* ===== BONUS SECTION ===== */
+.bonus-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.bonus-num {
+  background: var(--gold);
+  color: var(--bg-dark);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bonus-content h4 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 4px;
+}
+
+.bonus-content .bonus-value {
+  font-size: 14px;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.bonus-content p {
+  font-size: 15px;
+  color: var(--gray-light);
+}
+
+/* ===== GUARANTEE ===== */
+.guarantee {
+  background: rgba(46, 160, 67, 0.06);
+  border: 2px solid rgba(46, 160, 67, 0.25);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.guarantee-badge {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--green-cta);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-weight: 700;
+}
+
+.guarantee-badge .num {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.guarantee-badge .label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.guarantee h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--cream);
+  margin-bottom: 12px;
+}
+
+.guarantee p {
+  font-size: 16px;
+  color: var(--gray-light);
+  line-height: 1.7;
+}
+
+/* ===== FAQ ===== */
+.faq-item {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: var(--bg-card);
+  padding: 18px 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--cream);
+  transition: background 0.2s;
+}
+
+.faq-question:hover {
+  background: #222840;
+}
+
+.faq-toggle {
+  font-size: 24px;
+  color: var(--gold);
+  transition: transform 0.3s;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: rgba(26, 31, 46, 0.5);
+}
+
+.faq-answer-inner {
+  padding: 18px 24px;
+  font-size: 15px;
+  color: var(--gray-light);
+  line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+/* ===== NO CATCH ===== */
+.no-catch {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.no-catch h3 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--cream);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.no-catch p {
+  font-size: 16px;
+  color: var(--gray-light);
+  margin-bottom: 14px;
+}
+
+.no-catch ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.no-catch ul li {
+  padding: 10px 0 10px 28px;
+  position: relative;
+  font-size: 15px;
+  color: var(--gray-light);
+}
+
+.no-catch ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* ===== PS SECTION ===== */
+.ps-section {
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.ps-section strong {
+  color: var(--gold);
+}
+
+.ps-section p {
+  font-size: 16px;
+  color: var(--gray-light);
+  line-height: 1.7;
+}
+
+/* ===== BRASS BALLS STRIP ===== */
+.brass-strip {
+  background: var(--red);
+  padding: 20px;
+  text-align: center;
+}
+
+.brass-strip p {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 900;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--gray-mid);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer a {
+  color: var(--gray-mid);
+  text-decoration: underline;
+}
+
+.footer p {
+  max-width: 700px;
+  margin: 8px auto;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  .hero-sub { margin-left: auto; margin-right: auto; }
+  .hero-stars { justify-content: center; }
+  .hero-book img { max-width: 280px; }
+  .hero-arrow { display: none; }
+  .stats-bar-inner { grid-template-columns: repeat(2, 1fr); }
+  .chapters-grid { grid-template-columns: 1fr; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .letter .author-placeholder { float: none; margin: 0 auto 20px; }
+  .bonus-card { flex-direction: column; align-items: center; text-align: center; }
+  .offer-item { flex-direction: column; gap: 8px; text-align: center; }
+  .cta-btn { width: 100%; }
+}
+
+/* ===== ANIMATION ===== */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 4px 20px rgba(46, 160, 67, 0.4); }
+  50% { box-shadow: 0 4px 40px rgba(46, 160, 67, 0.7); }
+}
+
+.cta-btn { animation: pulse-glow 2.5s infinite; }
+.cta-btn:hover { animation: none; }
+
+.divider {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 200px;
+  border: none;
+  border-top: 1px solid rgba(201, 168, 76, 0.2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.handwritten {
+  font-family: var(--font-handwritten);
+  color: var(--gold);
+}
+
+.text-center { text-align: center; }
+.mt-40 { margin-top: 40px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-40 { margin-bottom: 40px; }
+</style>
+</head>
+<body>
+
+<!-- ===== ANNOUNCEMENT BAR ===== -->
+<div class="announcement-bar">
+  ⚡ LIMITED COPIES AVAILABLE — GET YOUR FREE BOOK BEFORE THEY'RE GONE ⚡
+</div>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-badge">🔬 Free + Shipping</span>
+      <h1>What If the <em>Invisible Energy</em> Around You Is Either Healing You… Or Slowly Destroying You?</h1>
+      <p class="hero-sub">Discover why a former T-Mobile VP walked away from corporate America to build the most scientifically studied energy technology on the planet — backed by <strong style="color:#fff">59+ independent studies.</strong></p>
+      
+      <div class="hero-stars">
+        <span class="stars">★★★★★</span>
+        <span>4.8 — Amazon Ratings</span>
+      </div>
+      
+      <a href="#order" class="cta-btn">
+        YES! Send Me the FREE Book!
+        <small>Just cover $9.95 shipping & handling</small>
+      </a>
+      <div class="cta-secure">🔒 Secure checkout · Your info is safe</div>
+    </div>
+    
+    <div class="hero-book">
+      <div class="hero-arrow">
+        <span>Get it FREE!</span>
+      </div>
+      <img src="book-3d.png" alt="The Energy of Everything by Philipp von Holtzendorff-Fehling" style="max-width:380px;width:100%;filter:drop-shadow(0 20px 60px rgba(201,168,76,0.2));">
+    </div>
+  </div>
+</section>
+
+<!-- ===== AS SEEN ON ===== -->
+<div class="as-seen-on">
+  <div class="as-seen-on-inner">
+    <p>Featured On &amp; Endorsed By</p>
+    <div class="logo-row">
+      <span>Dave Asprey</span>
+      <span>Luke Storey</span>
+      <span>Ben Greenfield</span>
+      <span>Danica Patrick</span>
+      <span>Kevin Harrington</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== STATS BAR ===== -->
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-item">
+      <div class="stat-num">59+</div>
+      <div class="stat-label">Independent Studies</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">48+</div>
+      <div class="stat-label">Placebo-Controlled</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">20,000+</div>
+      <div class="stat-label">User Testimonials</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Blood Cell Recovery</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ENDORSEMENT ===== -->
+<section class="section">
+  <div class="section-inner">
+    <div class="endorsement">
+      <p class="quote">"In a world awash with health hacks and surface-level wellness trends, this book is a breath of fresh, quantum-charged air. Philipp doesn't just speak about energy — he embodies it."</p>
+      <p class="author-name">Luke Storey</p>
+      <p class="author-title">Consciousness Explorer · Host of The Life Stylist Podcast</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE LETTER ===== -->
+<section class="letter">
+  <div class="letter-inner">
+    <p class="letter-from"><strong>From:</strong> Philipp von Holtzendorff-Fehling<br>
+    <span style="font-size:15px;color:#666;">Founder & CEO, Leela Quantum Tech</span></p>
+    
+    <img src="philipp-photo.png" alt="Philipp von Holtzendorff-Fehling" style="float:right;width:200px;height:200px;border-radius:12px;object-fit:cover;margin:0 0 20px 30px;border:4px solid var(--gold);">
+    
+    <p>Do you ever feel like something is <em>off</em> — but you can't quite put your finger on it?</p>
+    
+    <p>Your sleep isn't what it used to be. Your energy crashes in the afternoon. You feel foggy, wired, or just… drained. And no matter how many supplements you take, how many biohacks you try, or how clean you eat — <span class="letter-highlight">something still isn't right.</span></p>
+    
+    <p><strong>What if the problem isn't what you're putting IN your body… but what's being done to it from the OUTSIDE?</strong></p>
+    
+    <p>Every day, you're swimming in an invisible sea of electromagnetic frequencies — from your phone, your Wi-Fi router, your neighbor's 5G tower, even the wiring in your walls. And research is now showing these frequencies don't just pass through you harmlessly. <span class="letter-highlight">They're disrupting your blood cells, scrambling your brain waves, and stealing your energy at the cellular level.</span></p>
+    
+    <p>I didn't always know this. For years, I was a Vice President at T-Mobile — one of the largest telecom companies on Earth. I was building the very infrastructure that was flooding the world with these frequencies.</p>
+    
+    <p>But behind the scenes, my life was falling apart in ways I didn't understand.</p>
+    
+    <blockquote>My wife was diagnosed with chronic Lyme disease. Traditional medicine had no answers. I watched the woman I loved suffer — and I felt completely powerless.</blockquote>
+    
+    <p>That desperation sent me on a journey I never expected. I trained in shamanic healing. Past life regression. Energy work. Kundalini yoga. I studied with some of the most gifted healers on the planet — healers who could see and move energy in ways that defied everything I'd been taught in the corporate world.</p>
+    
+    <p>And then something extraordinary happened.</p>
+    
+    <p><strong>I began to perceive energy fields myself.</strong></p>
+    
+    <p>Not as a concept. Not as a theory. As direct experience. I could feel — and eventually see — the energetic reality that underlies everything physical. And I realized that the ancient healers, the yogis, the shamans… <span class="letter-highlight">they weren't making things up. They were describing something REAL.</span></p>
+    
+    <p>So I did what any obsessive former corporate executive would do: <strong>I set out to prove it scientifically.</strong></p>
+    
+    <p>I left T-Mobile. I founded Leela Quantum Tech. And over the past several years, we've commissioned <strong>59+ independent studies — 48+ of them placebo-controlled</strong> — at universities and research institutes around the world. The results?</p>
+    
+    <p style="clear:both;"></p>
+    
+    <div style="background:#f0ebe0;border-radius:12px;padding:24px;margin:24px 0;">
+      <p style="margin-bottom:10px;"><strong>✓ 100% of subjects</strong> showed complete blood cell recovery from Wi-Fi damage (Dr. Beverly Rubik)</p>
+      <p style="margin-bottom:10px;"><strong>✓ 20-29% increase</strong> in ATP (cellular energy) production</p>
+      <p style="margin-bottom:10px;"><strong>✓ 77.6% reduction</strong> in EEG brain stress markers</p>
+      <p style="margin-bottom:10px;"><strong>✓ Emoto Institute</strong> (Japan) didn't just endorse the technology — <span class="letter-highlight">they LICENSED it</span></p>
+      <p style="margin-bottom:0;"><strong>✓ 20,000+ testimonials</strong> from real users across 19 health conditions</p>
+    </div>
+    
+    <p>I wrote <em>The Energy of Everything</em> because I believe you deserve to know what I discovered. Not the watered-down version. Not the "woo woo" version. <strong>The real version — backed by science your doctor can verify.</strong></p>
+    
+    <p>This book is my life's work compressed into 156 pages. And right now, I'm giving it away free.</p>
+    
+    <p>Why? Because I'm tired of watching brilliant people suffer from problems they can't see. And because once you understand the energy of everything — <strong>you'll never look at your health, your home, or your life the same way again.</strong></p>
+    
+    <p style="font-family:var(--font-handwritten);font-size:28px;color:#333;margin-top:30px;">— Philipp</p>
+  </div>
+</section>
+
+<!-- ===== BRASS BALLS STRIP ===== -->
+<div class="brass-strip">
+  <p>Name another company with 59+ studies. We'll wait. ⏳</p>
+</div>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="section text-center">
+  <div class="section-inner">
+    <h2>Send Me Your Address…</h2>
+    <p class="section-subtitle">I'd like to rush a <strong>FREE</strong> copy of this brand new hardcover book to your doorstep, ASAP.</p>
+    <a href="#order" class="cta-btn">
+      YES! Reserve My Free Copy Now!
+      <small>You pay only $9.95 for shipping and handling</small>
+    </a>
+  </div>
+</section>
+
+<!-- ===== WHAT'S INSIDE ===== -->
+<section class="section section-alt">
+  <div class="section-wide">
+    <h2>Here's What You'll Discover <em>Inside</em></h2>
+    <p class="section-subtitle">156 pages of breakthroughs that bridge ancient wisdom, modern science, and practical tools you can use TODAY</p>
+    
+    <div class="chapters-grid">
+      <div class="chapter-card">
+        <div class="chapter-num">Section 1</div>
+        <div class="chapter-title">Where Past, Present & Future Meet</div>
+        <div class="chapter-desc">How ancient healers — from Ayurveda to TCM to Indigenous medicine — were describing REAL energy phenomena that quantum physics is now confirming. The 5,000-year thread that connects everything.</div>
+      </div>
+      
+      <div class="chapter-card">
+        <div class="chapter-num">Section 2</div>
+        <div class="chapter-title">The Technology That Changes Everything</div>
+        <div class="chapter-desc">What if you had a device that could neutralize harmful EMFs, structure your water, and boost your cellular energy — all at once? It exists. Here's the science behind it.</div>
+      </div>
+      
+      <div class="chapter-card">
+        <div class="chapter-num">Section 3</div>
+        <div class="chapter-title">The Science Nobody Can Argue With</div>
+        <div class="chapter-desc">59+ studies. Dark-field microscopy. ATP production data. EEG brain scans. Water crystal photography from the Emoto Institute. The evidence is overwhelming — and it's all in Chapter 4.</div>
+      </div>
+      
+      <div class="chapter-card">
+        <div class="chapter-num">Section 4</div>
+        <div class="chapter-title">Practical Applications for YOUR Life</div>
+        <div class="chapter-desc">Structure your water. Optimize your sleep. Protect your family from EMFs. Boost your plants' growth. Help your pets thrive. Even set quantum-level intentions. Chapter-by-chapter instructions.</div>
+      </div>
+      
+      <div class="chapter-card">
+        <div class="chapter-num">Section 5</div>
+        <div class="chapter-title">Becoming a Quantum Healer</div>
+        <div class="chapter-desc">Awaken your own healing abilities. Develop your intuition. Deepen your spiritual connection. Practical breathwork, visualization, and intention-setting protocols from 20+ years of training.</div>
+      </div>
+      
+      <div class="chapter-card">
+        <div class="chapter-num">Section 6</div>
+        <div class="chapter-title">The Future of Medicine</div>
+        <div class="chapter-desc">Where quantum healing is headed. AI-powered personalization. Integration with mainstream healthcare. How YOU can be part of the movement that changes medicine forever.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FASCINATION BULLETS ===== -->
+<section class="section">
+  <div class="section-inner">
+    <h2>When You Read This Book, You'll Discover…</h2>
+    <hr class="divider">
+    <ul class="bullets">
+      <li><strong>Why your blood cells literally clump together</strong> after 10 minutes near Wi-Fi — and the technology that reverses it in 100% of test subjects (page 52)</li>
+      <li><strong>The "structured water" secret</strong> that takes 3 minutes to transform ordinary water into high-energy water — and why your body (which is 99% water by molecular weight) desperately needs it</li>
+      <li><strong>How a 20-29% increase in ATP production</strong> translates to more energy, faster recovery, and better performance — without caffeine, supplements, or stimulants</li>
+      <li><strong>The EEG brain scan results</strong> that showed a 77.6% reduction in stress markers — explaining why so many users report sleeping like teenagers again</li>
+      <li><strong>Why the Emoto Institute in Japan</strong> didn't just study this technology — they LICENSED it (and what their water crystal photography revealed)</li>
+      <li><strong>The "David Hawkins consciousness scale" secret</strong> that ancient healers understood intuitively — and how quantum devices now calibrate at levels previously reserved for sacred sites</li>
+      <li><strong>How to protect your children from EMF exposure</strong> without becoming a paranoid parent or moving off-grid</li>
+      <li><strong>The plant experiments</strong> that prove this isn't placebo — because plants don't have beliefs, expectations, or marketing departments</li>
+      <li><strong>Why your pets respond to quantum energy</strong> within days — and what their behavior changes reveal about the technology's authenticity</li>
+      <li><strong>The simple daily practices</strong> (breathwork, intention-setting, energy awareness) that amplify everything the technology does — explained by someone who trained with world-class healers for 20+ years</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section section-alt text-center">
+  <div class="section-inner">
+    <p style="font-family:var(--font-handwritten);font-size:28px;color:var(--gold);margin-bottom:10px;">This book retails for $24.95, but today it's yours FREE</p>
+    <a href="#order" class="cta-btn">
+      YES! Send Me the Free Book!
+      <small>Just cover $9.95 shipping & I'll send it anywhere</small>
+    </a>
+  </div>
+</section>
+
+<!-- ===== PROOF SECTION ===== -->
+<section class="section">
+  <div class="section-inner">
+    <h2>The Science <em>Nobody Can Argue With</em></h2>
+    <p class="section-subtitle">Here are just a few of the 59+ independent studies referenced in the book</p>
+    
+    <div class="proof-card">
+      <h4>Dark-Field Microscopy Blood Study</h4>
+      <p>Multiple independent placebo-controlled studies in the U.S. and Austria examined blood cells before and after Wi-Fi exposure, then after treatment with quantum energy technology.</p>
+      <span class="result">Result: 100% of subjects showed complete cellular recovery</span>
+    </div>
+    
+    <div class="proof-card">
+      <h4>ATP (Cellular Energy) Production Study</h4>
+      <p>Human fibroblast cells subjected to quantum energy showed significant increases in adenosine triphosphate — the molecule your mitochondria use to power every function in your body.</p>
+      <span class="result">Result: 20-29% increase in ATP production</span>
+    </div>
+    
+    <div class="proof-card">
+      <h4>EEG Brain Stress Analysis</h4>
+      <p>Electroencephalogram measurements of subjects using quantum energy devices showed dramatic reductions in brain stress markers.</p>
+      <span class="result">Result: 77.6% reduction in brain stress</span>
+    </div>
+    
+    <div class="proof-card">
+      <h4>Emoto Institute Water Crystal Photography</h4>
+      <p>The world-renowned Emoto Institute in Japan studied the effects of quantum energy on water structure. The results were so significant that they didn't just endorse the technology…</p>
+      <span class="result">Result: Emoto Institute LICENSED the technology</span>
+    </div>
+    
+    <div class="proof-card">
+      <h4>BESA & IGEF Institute Certifications</h4>
+      <p>Two of the world's leading authorities on biosystem analysis and EMF research — the BESA Institute (Austria) and IGEF Institute (Spain/Ireland) — independently certified the devices.</p>
+      <span class="result">Result: Full certification from both institutes</span>
+    </div>
+    
+    <div style="text-align:center;margin-top:30px;">
+      <p style="color:var(--gray-mid);font-size:14px;">Want to see ALL the studies? Visit <a href="https://wedidthescience.com" style="color:var(--gold);">WeDidTheScience.com</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BRASS BALLS STRIP ===== -->
+<div class="brass-strip">
+  <p>Plants can't be placebo'd. Dogs don't read marketing materials. Water doesn't have beliefs.</p>
+</div>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section-alt">
+  <div class="section-wide">
+    <h2>What People Are Saying About <em>The Energy of Everything</em></h2>
+    <p class="section-subtitle">Real reviews from real readers</p>
+    
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p class="quote">This book merges deep wisdom with real-world application. The way Philipp explains frequency medicine and how we can reconnect with our true energetic nature is simply revolutionary. A must-read for anyone seeking true vitality.</p>
+        <p class="author-name">Verified Reader</p>
+        <p class="author-title">★★★★★</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <p class="quote">If you're curious about where science, spirit and technology meet, this book is absolutely worth reading.</p>
+        <p class="author-name">Kevin E. Johnson</p>
+        <p class="author-title">★★★★★ Amazon Review</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <p class="quote">A sharp, practical fusion of quantum physics and holistic wellness. Backed by studies and raw case studies. Insightful, credible, and actionable — perfect for skeptics or seekers ready to tune their frequency.</p>
+        <p class="author-name">Verified Reader</p>
+        <p class="author-title">★★★★★</p>
+      </div>
+    </div>
+    
+    <div style="text-align:center;margin-top:30px;">
+      <p style="color:var(--gray-mid);font-size:14px;">Read 20,000+ user testimonials at <a href="https://thankyouleelaq.com" style="color:var(--gold);">ThankYouLeelaQ.com</a> · See 1,600+ photo experiments at <a href="https://iloveleelaq.com" style="color:var(--gold);">ILoveLeelaQ.com</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AUTHORITY ENDORSEMENTS ===== -->
+<section class="section">
+  <div class="section-inner">
+    <div class="endorsement">
+      <p class="quote">"As a doctor rooted in both Eastern medicine and modern functional science, I rarely encounter a book that so powerfully unites energy, healing, and performance."</p>
+      <p class="author-name">Dr. Jyun Shimizu</p>
+      <p class="author-title">PhD Integrative Medicine · Doctor of Acupuncture</p>
+    </div>
+    
+    <div class="endorsement">
+      <p class="quote">"Philipp masterfully bridges science, ancient wisdom, and practical insight, offering a road map to vitality and our infinite healing potential."</p>
+      <p class="author-name">Dr. Brooke Stuart</p>
+      <p class="author-title">Functional Medicine Doctor · Founder, Let Go & Grow®</p>
+    </div>
+    
+    <div class="endorsement">
+      <p class="quote">"Philipp's book is groundbreaking. It opens the door to a deeper level of human potential — something every athlete, healer, and conscious person should explore."</p>
+      <p class="author-name">Natalie Zimmermann</p>
+      <p class="author-title">Two-Time World Boxing Champion</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT PHILIPP ===== -->
+<section class="section section-alt">
+  <div class="section-inner">
+    <h2>About <em>Philipp</em></h2>
+    <hr class="divider">
+    
+    <div style="text-align:center;margin-bottom:30px;">
+      <div style="width:160px;height:160px;border-radius:50%;margin:0 auto;overflow:hidden;border:4px solid var(--gold);"><img src="philipp-photo.png" alt="Philipp" style="width:100%;height:100%;object-fit:cover;"></div>
+    </div>
+    
+    <p style="font-size:17px;color:var(--gray-light);margin-bottom:16px;">Philipp Samor von Holtzendorff-Fehling is a coach, conscious entrepreneur, and energy healer whose journey bridges corporate leadership and holistic wellness.</p>
+    
+    <p style="font-size:17px;color:var(--gray-light);margin-bottom:16px;">For years he held executive positions in Europe and the United States, including serving as <strong style="color:var(--cream)">Vice President at T-Mobile International and T-Mobile US.</strong> While building a successful business career, he trained extensively in shamanic and energy healing practices, past life regression, trauma therapy, and Kundalini yoga.</p>
+    
+    <p style="font-size:17px;color:var(--gray-light);margin-bottom:16px;">Today, Philipp is the founder of <strong style="color:var(--cream)">Leela Quantum Tech</strong> and <strong style="color:var(--cream)">Quantum Upgrade</strong>, where he applies his expertise in quantum technology and frequency medicine to create tools that promote balance, vitality, and overall well-being.</p>
+    
+    <p style="font-size:17px;color:var(--gray-light);margin-bottom:16px;">He's also the <strong style="color:var(--cream)">#1 ranked men's 50+ tennis player in the United States (2024)</strong> — living proof that the principles in this book aren't just theory.</p>
+    
+    <p style="font-size:17px;color:var(--gray-light);">His company has commissioned <strong style="color:var(--cream)">59+ independent studies</strong>, earned certifications from the BESA and IGEF Institutes, won the Dragonfly Health Innovation Award, and amassed over <strong style="color:var(--cream)">20,000 user testimonials</strong> across 19 health conditions.</p>
+  </div>
+</section>
+
+<!-- ===== BONUSES ===== -->
+<section class="section">
+  <div class="section-inner">
+    <h2>Claim Your FREE Book <em>Today</em> and Get These Bonuses… For FREE!</h2>
+    <hr class="divider" style="margin-bottom:40px;">
+    
+    <div class="bonus-card">
+      <div class="bonus-num">#1</div>
+      <div class="bonus-content">
+        <h4>7-Day Quantum Upgrade Free Trial</h4>
+        <div class="bonus-value">Value: $99.00</div>
+        <p>Experience quantum energy streaming directly to you, your home, or your pets — no device needed. No credit card required. Over 20,000 users worldwide. This is the fastest way to FEEL what the book is describing.</p>
+      </div>
+    </div>
+    
+    <div class="bonus-card">
+      <div class="bonus-num">#2</div>
+      <div class="bonus-content">
+        <h4>"The Complete Science Brief" — All 59+ Studies Summarized</h4>
+        <div class="bonus-value">Value: $47.00</div>
+        <p>Every study. Every result. Plain English summaries you can share with your doctor, your skeptical spouse, or anyone who says "where's the proof?" Includes links to full published studies.</p>
+      </div>
+    </div>
+    
+    <div class="bonus-card">
+      <div class="bonus-num">#3</div>
+      <div class="bonus-content">
+        <h4>"The Quantum Water Protocol" — Quick-Start Guide</h4>
+        <div class="bonus-value">Value: $27.00</div>
+        <p>Your body is 99% water by molecular weight. This guide shows you exactly how to structure and energize your water in minutes — the single fastest upgrade you can make to your daily health.</p>
+      </div>
+    </div>
+    
+    <div class="bonus-card">
+      <div class="bonus-num">#4</div>
+      <div class="bonus-content">
+        <h4>"EMF Protection Blueprint" — Protect Your Home & Family</h4>
+        <div class="bonus-value">Value: $47.00</div>
+        <p>A room-by-room guide to identifying and mitigating the most dangerous EMF hotspots in your home. Includes which devices emit the most, where to place protection, and how to test your progress.</p>
+      </div>
+    </div>
+    
+    <div class="bonus-card">
+      <div class="bonus-num">#5</div>
+      <div class="bonus-content">
+        <h4>Access to the Private Quantum Community</h4>
+        <div class="bonus-value">Value: $97.00</div>
+        <p>Join a global community of 20,000+ quantum energy enthusiasts sharing experiments, results, and breakthroughs daily. This is where the real magic happens — real people, real experiments, real results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OFFER STACK ===== -->
+<section class="section section-alt" id="order">
+  <div class="section-inner">
+    <h2>Here's Everything You Get <em>Today</em></h2>
+    <hr class="divider" style="margin-bottom:40px;">
+    
+    <div class="offer-stack">
+      <div class="offer-header">
+        <h3>Your Complete Package</h3>
+      </div>
+      
+      <div class="offer-item">
+        <span class="check">✓</span>
+        <div class="name">
+          <strong>Hardcover Copy of "The Energy of Everything"</strong>
+          <small>156 pages · Full color · Ships worldwide</small>
+        </div>
+        <div class="value">
+          <span class="original">$24.95</span>
+          <span class="free">FREE</span>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="check">✓</span>
+        <div class="name">
+          <strong>Bonus #1: 7-Day Quantum Upgrade Free Trial</strong>
+          <small>Quantum energy streaming — no device needed</small>
+        </div>
+        <div class="value">
+          <span class="original">$99.00</span>
+          <span class="free">FREE</span>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="check">✓</span>
+        <div class="name">
+          <strong>Bonus #2: The Complete Science Brief</strong>
+          <small>All 59+ studies summarized in plain English</small>
+        </div>
+        <div class="value">
+          <span class="original">$47.00</span>
+          <span class="free">FREE</span>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="check">✓</span>
+        <div class="name">
+          <strong>Bonus #3: The Quantum Water Protocol</strong>
+          <small>Structure your water in minutes</small>
+        </div>
+        <div class="value">
+          <span class="original">$27.00</span>
+          <span class="free">FREE</span>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="check">✓</span>
+        <div class="name">
+          <strong>Bonus #4: EMF Protection Blueprint</strong>
+          <small>Room-by-room home protection guide</small>
+        </div>
+        <div class="value">
+          <span class="original">$47.00</span>
+          <span class="free">FREE</span>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="check">✓</span>
+        <div class="name">
+          <strong>Bonus #5: Private Quantum Community Access</strong>
+          <small>Join 20,000+ members worldwide</small>
+        </div>
+        <div class="value">
+          <span class="original">$97.00</span>
+          <span class="free">FREE</span>
+        </div>
+      </div>
+      
+      <div class="offer-total">
+        <div class="total-value">Total Value: <s>$341.95</s></div>
+        <div class="your-price">FREE! <small>Just pay $9.95 shipping</small></div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-40">
+      <a href="#order" class="cta-btn">
+        YES! I Want This Free Book NOW!
+        <small>Claim your copy + all 5 bonuses for just $9.95 shipping</small>
+      </a>
+      <div class="cta-secure" style="justify-content:center;">🔒 256-bit SSL encryption · Your information is 100% secure</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GUARANTEE ===== -->
+<section class="section">
+  <div class="section-inner">
+    <div class="guarantee">
+      <div class="guarantee-badge">
+        <span class="num">60</span>
+        <span class="label">Day</span>
+      </div>
+      <h3>My "You've Gotta Be Crazy" Guarantee</h3>
+      <p>I <strong>100% guarantee that you'll love this book</strong>, or I'll return your $9.95 shipping and let you keep the book anyway. That's right. You don't even have to send anything back. Just email us and we'll give you your money back with no questions asked. Sound fair?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NO CATCH ===== -->
+<section class="section section-alt">
+  <div class="no-catch">
+    <h3>There Is NO Catch!</h3>
+    <p>I know there are some websites out there that offer you something cool for free, but then stick you into some program that charges your card every month. <strong style="color:var(--cream);">This isn't one of them.</strong></p>
+    <p>There's <strong style="color:var(--cream);">NO hidden "continuity program"</strong> — and in case you're wondering why I'm doing this…</p>
+    
+    <ul>
+      <li><strong style="color:var(--cream);">It's my way of starting a relationship.</strong> I believe once you read this book, you'll understand why thousands of people have made quantum energy a permanent part of their lives.</li>
+      <li><strong style="color:var(--cream);">Because the science speaks for itself.</strong> Unlike companies that hide behind vague claims, we have 59+ studies. I'm not afraid to put the proof in your hands.</li>
+      <li><strong style="color:var(--cream);">I get to grow our community.</strong> When you see how powerful this technology is, you'll want to go deeper. And I'll be here when you're ready — with products, tools, and a community of people just like you.</li>
+      <li><strong style="color:var(--cream);">Honestly? I'm tired of the noise.</strong> The wellness industry is full of people making claims they can't back up. I wrote this book so YOU can see the evidence and decide for yourself. No hype. No pressure. Just truth.</li>
+    </ul>
+    
+    <div class="text-center mt-40">
+      <a href="#order" class="cta-btn">
+        YES! Reserve My Free Copy Now!
+        <small>You pay only $9.95 for shipping</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section">
+  <div class="section-inner">
+    <h2>Frequently Asked Questions</h2>
+    <hr class="divider" style="margin-bottom:40px;">
+    
+    <div class="faq-item active">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Is the book really free? What's the catch?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Yes, the book is absolutely free. The hardcover retails for $24.95, but we bought it for you. All we ask is that you cover the $9.95 shipping and handling ($19.95 international). There are no hidden fees, no trials, no subscriptions — just a book and bonuses designed to change how you think about energy, health, and wellness.</div>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>What is "quantum energy" — is this real science?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Quantum energy exists at the subatomic level and is the foundation of everything physical. What makes Leela Quantum Tech unique is that we don't just talk about it — we test it. With 59+ independent studies, 48+ placebo-controlled, conducted at universities and research institutes worldwide, our technology is among the most scientifically validated in the wellness space. The book walks you through the evidence step by step.</div>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Do I need to understand quantum physics to read this?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Not at all. Philipp wrote this book for curious humans, not physicists. Whether you're a biohacker who wants hard data or someone on a spiritual path who intuitively knows there's more to reality than meets the eye — this book meets you where you are. Complex concepts are explained in plain English with real-world applications.</div>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>How long will it take to get my book?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">U.S. orders typically arrive within 5-7 business days. International shipping takes 2-3 weeks depending on location. You'll receive tracking information as soon as your order ships. And your digital bonuses are delivered instantly — so you can start learning the moment you order.</div>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Who is Philipp von Holtzendorff-Fehling?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Philipp is a former VP at T-Mobile International who left corporate America to dedicate his life to quantum energy technology and healing. He's trained in shamanic healing, energy work, and Kundalini yoga for 20+ years. He founded Leela Quantum Tech and Quantum Upgrade, and in 2024 became the #1 ranked men's 50+ tennis player in the United States. He walks the talk.</div>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Where can I see the studies mentioned in the book?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">All studies are referenced in the book with links to full published research. You can also visit <a href="https://wedidthescience.com" style="color:var(--gold);">WeDidTheScience.com</a> for a complete visual breakdown of the science, or visit <a href="https://leelaq.com" style="color:var(--gold);">LeelaQ.com</a> to access the research directly.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="section section-alt">
+  <div class="section-inner text-center">
+    <h2>Send Me Your Address…</h2>
+    <p class="section-subtitle">I'd like to rush a <strong>FREE</strong> hardcover copy to your doorstep, ASAP.</p>
+    
+    <p style="font-size:17px;color:var(--gray-light);margin-bottom:30px;">Like I mentioned before, <strong style="color:var(--cream);">this book is free.</strong> I'll pay for the book and all I ask is that you help cover the shipping cost. We'll send it anywhere in the world.</p>
+    
+    <a href="#order" class="cta-btn">
+      YES! Reserve My Free Copy Now!
+      <small>You pay only $9.95 for shipping & handling ($19.95 intl)</small>
+    </a>
+    
+    <!-- PS Section -->
+    <div class="ps-section">
+      <p><strong>P.S.</strong> In case you're one of those people (like me) who just skips to the end, here's the deal:</p>
+      <p style="margin-top:12px;">I'm mailing you a <strong>156-page hardcover book, "The Energy of Everything"</strong> (that retails at $24.95) for <strong>FREE</strong>. Yes, this book is free, and all you pay is $9.95 US or $19.95 international. There's no catch, no gimmicks, no hidden subscriptions.</p>
+      <p style="margin-top:12px;">This is the book that a former T-Mobile VP wrote after walking away from corporate America, training with world-class energy healers for 20 years, and commissioning <strong>59+ independent studies</strong> to prove that quantum energy technology works.</p>
+      <p style="margin-top:12px;">If you don't love the book — I'll even refund your shipping costs. And you keep the book.</p>
+      <p style="margin-top:12px;"><strong>P.P.S.</strong> Still skeptical? Good. Visit <a href="https://wedidthescience.com" style="color:var(--gold);">WeDidTheScience.com</a> to see 59+ studies. Visit <a href="https://iloveleelaq.com" style="color:var(--gold);">ILoveLeelaQ.com</a> to see 1,600+ photo experiments from real users. Visit <a href="https://thankyouleelaq.com" style="color:var(--gold);">ThankYouLeelaQ.com</a> to read 20,000+ testimonials. Then come back and get your free book. We'll wait. 😉</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <p>Leela Quantum Tech · <a href="https://leelaq.com">LeelaQ.com</a> · <a href="https://quantumupgrade.io">QuantumUpgrade.io</a></p>
+  <p style="margin-top:12px;">The statements made in this book and on this page have not been evaluated by the Food and Drug Administration (FDA), the EFSA, or any other government derivatives thereof. The content, tools, and methods mentioned are not intended to diagnose, treat, cure, or prevent any disease or health condition. The terms "healing" or "healer" refer exclusively to the release and orchestration of energy flow. Consult your healthcare provider before making any changes to your health regimen.</p>
+  <p style="margin-top:12px;"><a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="#">Contact</a></p>
+  <p style="margin-top:12px;">© 2026 Leela Quantum Tech. All Rights Reserved.</p>
+</footer>
+
+<script>
+function toggleFAQ(el) {
+  const item = el.closest('.faq-item');
+  const wasActive = item.classList.contains('active');
+  // Close all
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+  // Toggle this one
+  if (!wasActive) item.classList.add('active');
+}
+
+// Smooth scroll for CTA links
+document.querySelectorAll('a[href="#order"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('order').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+});
+</script>
+
+</body>
+</html>
